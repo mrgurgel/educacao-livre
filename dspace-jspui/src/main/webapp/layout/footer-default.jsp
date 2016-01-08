@@ -37,18 +37,30 @@
 %>
 </div>
 </main>
-            <%-- Page footer --%>
-             <footer class="navbar navbar-inverse navbar-bottom">
-             <div id="designedby" class="container text-muted">
-             <fmt:message key="jsp.layout.footer-default.theme-by"/> <a href="http://www.cineca.it"><img
-                                    src="<%= request.getContextPath() %>/image/logo-cineca-small.png"
-                                    alt="Logo CINECA" /></a>
-			<div id="footer_feedback" class="pull-right">                                    
-                                <p class="text-muted"><fmt:message key="jsp.layout.footer-default.text"/>&nbsp;-
-                                <a target="_blank" href="<%= request.getContextPath() %>/feedback"><fmt:message key="jsp.layout.footer-default.feedback"/></a>
-                                <a href="<%= request.getContextPath() %>/htmlmap"></a></p>
-                                </div>
-			</div>
-    </footer>
+
+
+<div ui-view="footer" class="ng-scope"><footer class="ng-scope">
+    <div class="container">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            <ul class="sponsors-list">
+                <li><img alt="" src="<%= request.getContextPath() %>/theme/thrive/image/logo-footer.svg"></li>
+                <li><img alt="" src="<%= request.getContextPath() %>/theme/thrive/image/logo-unesco.svg"></li>
+                <li><img alt="" src="<%= request.getContextPath() %>/theme/thrive/image/logo-oviin.svg"></li>
+                <li><img alt="" src="<%= request.getContextPath() %>/theme/thrive/image/logo-sesi.svg"></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="social-label">Nossos Canais</div>
+            <ul class="nav nav-pills social-list">
+                <li role="presentation" class="facebook"><a ng-click="open()" href="javascript:void(0);"><i class="fa fa-facebook fa-2"></i></a></li>
+                <li role="presentation" class="twitter"><a ng-click="open()" href="javascript:void(0);"><i class="fa fa-twitter fa-2"></i></a></li>
+                <li role="presentation" class="youtube"><a ng-click="open()" href="javascript:void(0);"><i class="fa fa-youtube fa-2"></i></a></li>
+                <li role="presentation" class="google-plus"><a ng-click="open()" href="javascript:void(0);"><i class="fa fa-google-plus fa-2"></i></a></li>
+                <li role="presentation" class="instagram"><a ng-click="open()" href="javascript:void(0);"><i class="fa fa-instagram fa-2"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</footer></div>
+
     </body>
 </html>

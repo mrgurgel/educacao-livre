@@ -660,8 +660,8 @@ else
 	if (brefine) {
 %>
 
-<h3 class="facets"><fmt:message key="jsp.search.facet.refine" /></h3>
-<div id="facets" class="facetsBox">
+<%--h3 class="facets"><fmt:message key="jsp.search.facet.refine" /></h3--%>
+<div id="facets" class="facetsBox row">
 
 <%
 	for (DiscoverySearchFilterFacet facetConf : facetsConf)
@@ -677,8 +677,11 @@ else
 	    int limit = facetConf.getFacetLimit()+1;
 	    
 	    String fkey = "jsp.search.facet.refine."+f;
-	    %><div id="facet_<%= f %>" class="panel panel-success">
-	    <div class="panel-heading"><fmt:message key="<%= fkey %>" /></div>
+	    %><div id="facet_<%= f %>" class="facet col-md-12">
+	    <div class="thumbnail icon-<%= f %>">
+	     <div class="icon-facet text-center"><i class="fa fa-<%= f %> fa-4"></i></div>
+	    <div class="white-box">
+	    	<h3 class="news-title text-center"><fmt:message key="<%= fkey %>" /></h3>
 	    <ul class="list-group"><%
 	    int idx = 1;
 	    int currFp = UIUtil.getIntParameter(request, f+"_page");
@@ -741,7 +744,7 @@ else
             }
             %></li><%
 	    }
-	    %></ul></div><%
+	    %></ul></div></div></div><%
 	}
 
 %>

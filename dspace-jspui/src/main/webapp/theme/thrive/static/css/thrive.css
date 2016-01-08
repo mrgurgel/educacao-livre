@@ -1,0 +1,685 @@
+@charset "UTF-8";/*!
+***
+**** CSS By Ricardo Cruz - http://thrive.com.br
+***/
+
+h2{
+	color: #9a2378;
+}
+
+input[type="text"] {
+    font-family: sans-serif;
+}
+
+.navbar-toggle {
+	font-size:24px;
+	color: #069;
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+	background: transparent!important;
+	}
+.navbar-collapse.in {
+	overflow-y: visible!important;
+}
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse, .pre-scrollable {
+	max-height: auto!important;
+}
+
+
+.navbar-inverse {
+    background: rgba(255, 255, 255, 0.95);
+    border-color: #e7e7e7;
+    -webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset, 0 1px 5px rgba(0, 0, 0, 0.075);
+}
+
+
+.glyphicon-menu-hamburger:before {
+  content:"\e236";
+}
+
+.navbar-inverse .navbar-nav li  a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #069;
+	text-transform: uppercase;
+}
+
+.navbar-inverse .navbar-nav .glyphicon {
+    font-size: 24px;
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #e7e7e7;
+}
+
+.container.banner {
+	padding-top: 30px;
+}
+
+.breadcrumb li {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color: #555;
+	padding: 5px 5px 5px 0;
+}
+
+body.Página.inicial .breadcrumb,
+body.inicio .breadcrumb,
+body.Home .breadcrumb {
+	display: none;
+}
+
+main {
+	background: #ECECEC;
+}
+
+.browse_range {
+	color: #9a2378;
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 1.3em;
+    margin-top: 10px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+table {
+	background: #FFF;
+	-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset, 0 1px 5px rgba(0, 0, 0, 0.075);
+    border-bottom: #006696 solid 20px;
+}
+
+.panel table {
+	border-bottom: 0px;
+}
+
+/***************
+*********** BOXES
+*********** COLEÇÕES
+*********** HOME.JSP
+*****************/
+
+h1.title-communitylist {
+	color: #9a2378;
+}
+
+.community-list.row {
+	padding-bottom: 30px;
+}
+
+.community-list .well {
+	margin-right: 15px;
+}
+
+.community-list section#ambiente .col-md-4 {
+	padding-left: 0;
+}
+
+div.section_ambiente {
+	background: url(../../image/bg-topo-repeat.png) center repeat;
+	padding: 50px 0;
+}
+
+section#ambiente .box-menu {
+    background: #FCFCFC; /*#e6e6e6;*/
+}
+section#ambiente .box-menu .caret {
+    border-color: #e3a516 transparent -moz-use-text-color;
+    border-style: solid solid none;
+    border-width: 16px 16px 0;
+    bottom: 0;
+    margin-left: -16px;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out 0s;
+}
+section#ambiente .box-menu a {
+    color: #999;
+    display: block;
+    font-family: "Open Sans",sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    height: 160px;
+    padding: 30px 10px 0;
+    text-align: center;
+    transition: all 0.3s ease-in-out 0s;
+    width: 100%;
+}
+section#ambiente .box-menu a:hover, section#ambiente .box-menu a.active {
+    background-position: 0 108%;
+    color: #fff;
+    text-decoration: none;
+}
+section#ambiente .box-menu a:hover i, section#ambiente .box-menu a.active i {
+    margin: 10px auto;
+    transition: all 0.3s ease-in-out 0s;
+}
+section#ambiente .box-menu a:hover .caret, section#ambiente .box-menu a.active .caret {
+    bottom: -14px;
+    opacity: 1;
+    transition: all 0.3s ease-in-out 0s;
+}
+section#ambiente .box-menu a.active.funciona,
+section#ambiente .box-menu a.matematica:hover,
+section#ambiente .box-menu a.active.matematica,
+section#ambiente .box-menu a.Matemática:hover,
+section#ambiente .box-menu a.active.Matemática,
+section#ambiente .box-menu a.portugues:hover,
+section#ambiente .box-menu a.active.portugues,
+section#ambiente .box-menu a.Português:hover,
+section#ambiente .box-menu a.active.Português,
+section#ambiente .box-menu a.Habilidades:hover,
+section#ambiente .box-menu a.active.Habilidades {
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in-out 0s;
+}
+section#ambiente .box-menu a.matematica:hover i, section#ambiente .box-menu a.active.matematica i,
+section#ambiente .box-menu a.Matemática:hover i, section#ambiente .box-menu a.active.Matemática i {
+    background-position: 0 -50px;
+}
+section#ambiente .box-menu a.portugues:hover i, section#ambiente .box-menu a.active.portugues i,
+section#ambiente .box-menu a.Português:hover i, section#ambiente .box-menu a.active.Português i {
+    background-position: 0 -58px;
+}
+section#ambiente .box-menu a.Habilidades:hover i, section#ambiente .box-menu a.active.Habilidades i {
+    background-position: 0 -42px;
+    margin-top: 15px;
+}
+section#ambiente .box-menu a.funciona .caret {
+    border-top-color: #d49214;
+}
+section#ambiente .box-menu a.matematica,
+section#ambiente .box-menu a.Matemática {
+    background: rgba(0, 0, 0, 0) url("../../image/box-menu-border-matematica.jpg") repeat-x scroll 0 100% / 100% 7%;
+    transition: all 0.3s ease-in-out 0s;
+}
+section#ambiente .box-menu a.matematica .caret,
+section#ambiente .box-menu a.Matemática .caret {
+    border-top-color: #d32c54;
+}
+section#ambiente .box-menu a.portugues,
+section#ambiente .box-menu a.Português {
+    background: rgba(0, 0, 0, 0) url("../../image/box-menu-border-portugues.jpg") repeat-x scroll 0 100% / 100% 7%;
+    transition: all 0.3s ease-in-out 0s;
+}
+section#ambiente .box-menu a.portugues .caret ,
+section#ambiente .box-menu a.Português .caret {
+    border-top-color: #008a73;
+}
+section#ambiente .box-menu a.Habilidades {
+    background: rgba(0, 0, 0, 0) url("../../image/box-menu-border-habilidade.jpg") repeat-x scroll 0 100% / 100% 7%;
+    transition: all 0.3s ease-in-out 0s;
+}
+section#ambiente .box-menu a.Habilidades .caret {
+    border-top-color: #7ea97b;
+}
+section#ambiente .box-menu a i {
+    display: block;
+    height: 55px;
+    margin: 0 auto 10px;
+    transition: all 0.3s ease-in-out 0s;
+}
+section#ambiente .box-menu a i.icon-matematica,
+section#ambiente .box-menu a i.icon-Matemática {
+    background: rgba(0, 0, 0, 0) url("../../image/icon-matematica.png") no-repeat scroll 0 0;
+    height: 48px;
+    margin-bottom: 10px;
+    width: 49px;
+}
+section#ambiente .box-menu a i.icon-portugues,
+section#ambiente .box-menu a i.icon-Português {
+    background: rgba(0, 0, 0, 0) url("../../image/icon-portugues.png") no-repeat scroll 0 0;
+    height: 58px;
+    margin-bottom: 0;
+    width: 51px;
+}
+section#ambiente .box-menu a i.icon-Habilidades {
+    background: rgba(0, 0, 0, 0) url("../../image/icon-habilidade.png") no-repeat scroll 0 0;
+    height: 39px;
+    margin-bottom: 13px;
+    margin-top: 6px;
+    width: 40px;
+}
+
+/************
+******* FACETAS
+******* HOME
+******* e INTERNAS
+************/
+
+.facetsBox {
+	padding: 30px 0 10px;
+}
+
+.col-md-3 .col-md-12 .facetsBox {
+	padding: 0px 0px 10px 0px;
+}
+
+.white-box {
+	background: #FFF;
+}
+
+.facet {
+	padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-md-3 .col-md-12 .facetsBox .facet {
+	padding: 0;
+}
+
+.icon-facet {
+	margin: 0;
+	padding: 40px 0;
+	color: #FFF;
+}
+
+.facetsBox h3.news-title {
+	padding-top: 20px;
+}
+
+.facetsBox .list-group{
+	padding: 10px 20px;
+}
+
+.facetsBox .list-group li:hover a{
+	color: #FFF;
+	transition: all 0.02s ease-in-out 0s;
+}
+
+.facetsBox .list-group li.paginacao {
+	border-width: 0px;
+	border-top-width: 1px;
+	padding-left: 0; padding-right: 0;
+}
+
+.facetsBox .list-group li.paginacao:hover {
+	background: #FFF;
+}
+
+.thumbnail i {
+	-ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.thumbnail:hover i {
+	-ms-transform: rotate(-5deg); /* IE 9 */
+    -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
+    transform: rotate(-5deg);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.icon-author {
+	background: #89CFCE;
+	-webkit-transition:.5s;
+	-moz-transition:.5s;
+	-ms-transition:.5s;
+	-o-transition:.5s;
+}
+
+.icon-author:hover {
+	background: #55b8b8;
+	-webkit-transition:.5s;
+	-moz-transition:.5s;
+	-ms-transition:.5s;
+	-o-transition:.5s;
+}
+
+.icon-author .list-group li:hover{
+	background: #79c7c7;
+}
+
+.icon-author .list-group li:hover span.badge {
+	background: #FFF;
+	color: #79c7c7;
+}
+
+.icon-author .list-group li span.badge {
+	background: #79c7c7;
+}
+
+.fa-group::before, .fa-author::before {
+    content: "";
+}
+
+.icon-subject {
+	background: #E08755;
+	-webkit-transition:.5s;
+	-moz-transition:.5s;
+	-ms-transition:.5s;
+	-o-transition:.5s;
+}
+
+.icon-subject:hover {
+	background: #d3662b;
+	-webkit-transition:.5s;
+	-moz-transition:.5s;
+	-ms-transition:.5s;
+	-o-transition:.5s;
+}
+
+.icon-subject .list-group li:hover{
+	background: #d87540;
+}
+
+.icon-subject .list-group li:hover span.badge {
+	background: #FFF;
+	color: #d87540;
+}
+
+.icon-subject .list-group li span.badge {
+	background: #d87540;
+}
+
+.fa-subject::before {
+	content: "";
+}
+
+
+.icon-resourceType {
+	background: #ffcb00;
+	-webkit-transition:.5s;
+	-moz-transition:.5s;
+	-ms-transition:.5s;
+	-o-transition:.5s;
+}
+
+.icon-resourceType:hover {
+	background: #e6b700;
+	-webkit-transition:.5s;
+	-moz-transition:.5s;
+	-ms-transition:.5s;
+	-o-transition:.5s;
+}
+
+.icon-resourceType .list-group li:hover{
+	background: #ffcb00;
+}
+
+.icon-resourceType .list-group li:hover span.badge {
+	background: #FFF;
+	color: #ffcb00;
+}
+
+.icon-resourceType .list-group li span.badge {
+	background: #ffcb00;
+}
+
+.fa-resourceType::before {
+	content: "";
+}
+
+.icon-profileClass {
+	background: #70D590;
+	-webkit-transition:.5s;
+	-moz-transition:.5s;
+	-ms-transition:.5s;
+	-o-transition:.5s;
+}
+
+.icon-profileClass:hover {
+	background: #3abf66;
+	-webkit-transition:.5s;
+	-moz-transition:.5s;
+	-ms-transition:.5s;
+	-o-transition:.5s;
+}
+
+.icon-profileClass .list-group li:hover{
+	background: #5ece83;
+}
+
+.icon-profileClass .list-group li:hover span.badge {
+	background: #FFF;
+	color: #5ece83;
+}
+
+.icon-profileClass .list-group li span.badge {
+	background: #5ece83;
+}
+
+.fa-profileClass::before {
+	content: "";
+}
+
+
+.facetsBox .list-group li:last-child:hover a{
+	color: #006696;
+}
+
+
+.facetsBox .list-group li:last-child:hover a:hover{
+	color: #fff;
+}
+
+.fa-2 {
+    font-size: 2em;
+}
+.fa-3 {
+    font-size: 4em;
+}
+.fa-4 {
+    font-size: 7em;
+}
+.fa-5 {
+    font-size: 12em;
+}
+.fa-6 {
+    font-size: 20em;
+}
+
+ul.list-group .btn{
+	font-size: 12px;
+}
+
+/*****
+******* RODAPÉ
+*******/
+
+footer .nav > li > a {
+    padding: 5px 0px 5px 10px;
+}
+footer .nav > li.google-plus > a {
+	padding:5px 0px 5px 4px;
+}
+footer .nav > li.facebook > a {
+    padding: 5px 0px 5px 15px;
+}
+
+footer .nav > li > a:hover {
+	color: #FFF;
+}
+
+
+/**********
+****** INTERNAS
+************/
+
+.discovery-result-pagination.row.container {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+main .container div.well {
+	color: #FFF;
+	border-radius: 0px;
+	-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset, 0 1px 5px rgba(0, 0, 0, 0.075);
+    -webkit-box-shadow:0 1px 2px rgba(0,0,0,.075);box-shadow:0 1px 2px rgba(0,0,0,.075)
+
+}
+
+main .container div.well h2,
+main .container div.well h2 a {
+	color: #FFF!important;
+}
+
+main .container div.well img{
+	transition: all 0.2s ease-in-out 0s;
+}
+
+main .container div.well:hover img{
+	-ms-transform: rotate(-5deg); /* IE 9 */
+    -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
+    transform: rotate(-5deg);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+main .container div.well small {
+	color: #FFF;
+}
+
+body.Matemática main .container div.well {
+	background: #D32855;
+	color: #FFF;
+	border-radius: 0px;
+	-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset, 0 1px 5px rgba(0, 0, 0, 0.075);
+    transition: all 0.3s ease-in-out 0s;
+
+}
+
+body.Matemática main .container div.well:hover {
+	background: #B71742;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+body.Habilidades main .container div.well {
+	background: #a8cb9a;
+	color: #FFF;
+	border-radius: 0px;
+	-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset, 0 1px 5px rgba(0, 0, 0, 0.075);
+    transition: all 0.3s ease-in-out 0s;
+
+}
+
+body.Habilidades main .container div.well:hover {
+	background: #7db168;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+body.Português main .container div.well {
+	background: #399;
+	color: #FFF;
+	border-radius: 0px;
+	-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset, 0 1px 5px rgba(0, 0, 0, 0.075);
+    transition: all 0.3s ease-in-out 0s;
+
+}
+
+body.Português main .container div.well:hover {
+	background: #2d8686;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+
+body.Objetos.Educacionais main .container div.well,
+body.Communities.and.Collections main .container div.well,
+body.Comunidades.e.Coleções main .container div.well{
+	background: #FFB200;
+	color: #FFF;
+	border-radius: 0px;
+	-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset, 0 1px 5px rgba(0, 0, 0, 0.075);
+    transition: all 0.3s ease-in-out 0s;
+
+}
+
+body.Objetos.Educacionais main .container div.well:hover,
+body.Communities.and.Collections .container div.well:hover,
+body.Comunidades.e.Coleções .container div.well:hover{
+	background: #e6b700;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+/*** Coleções na pagina da Comunidade **/
+
+.panel.recent-submissions {
+	margin-top: 20px;
+}
+
+#browse_navigation.well,
+#browse_controls.well {
+	background-image: none;
+	background: #f7f7f7;
+}
+
+#browse_navigation form,
+#browse_controls form {
+	color: #323232;
+}
+
+.panel .panel-heading {
+	border-radius: 0px !important;
+}
+
+.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child, .btn-group > .btn:last-child:not(:first-child), .btn-group > .dropdown-toggle:not(:first-child), .input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:first-child > .btn-group:not(:first-child) > .btn, .input-group-btn:first-child > .btn:not(:first-child), .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group > .btn, .input-group-btn:last-child > .dropdown-toggle {
+	border-bottom-left-radius: 4px;
+	border-top-left-radius: 4px;
+}
+
+div.panel {
+	border-bottom-width: 20px;
+	border-color: #c8e5f4;
+}
+
+div.panel-primary .panel-heading {
+	background:#006696;
+}
+
+/*******
+********** SEARCH
+**************/
+
+.panel-default > .discovery-query.panel-heading,
+.panel-default > .discovery-pagination-controls.panel-footer {
+	background: #FFF;
+}
+
+.discovery-result-results .panel-heading {
+	background: #006696;
+	color: #FFF;
+}
+
+
+.alert-info {
+	background: #CFE8F5;
+}
+
+/** Simple search **/
+
+.simple-search {
+	margin-right: 5px;
+}
+
+.simple-search .btn {
+	position: relative;
+	background: #FFF;
+}
+
+.simple-search .btn:hover {
+	background: #006696;
+}
+
+.simple-search input {
+	height: 45px;
+}
+
+/*** LOGIN ***/
+form#loginform .row .col-md-6 {
+	padding-right: 0px;
+}

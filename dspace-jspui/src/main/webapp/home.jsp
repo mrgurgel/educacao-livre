@@ -60,10 +60,6 @@
 
 <dspace:layout locbar="nolink" titlekey="jsp.home.title" feedData="<%= feedData %>">
 
-	<div class="jumbotron">
-        <%= topNews %>
-	</div>
-
 <div class="row">
 <%
 if (submissions != null && submissions.count() > 0)
@@ -153,16 +149,14 @@ if (submissions != null && submissions.count() > 0)
 <%
 }
 %>
-<div class="col-md-4">
-    <%= sideNews %>
+
 </div>
-</div>
-<div class="container row">
-<%
+<%--<div class="container row">
+ <%
 if (communities != null && communities.length != 0)
 {
-%>
-	<div class="col-md-4">		
+%> 
+	<div class="col-md-12">		
                <h3><fmt:message key="jsp.home.com1"/></h3>
                 <p><fmt:message key="jsp.home.com2"/></p>
 				<div class="list-group">
@@ -195,17 +189,63 @@ if (communities != null && communities.length != 0)
 		<p><%= communities[i].getMetadata("short_description") %></p>
     </div>
 </div>                            
-<%
+
     }
-%>
+
 	</div>
 	</div>
 <%
 }
-%>
+%>  --%>
+
+
+<%-- COLEÇÕES ESTÁTICAS NA HOME.JSP, JÁ QUE NÃO RECEBE A VARIÁVEL MAP COLLECTIONS E ELAS SÃO COLEÇÕES --%>
+</div>
+<div class="section_ambiente">
+	<div class="container">
+      <section id="ambiente">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <div class="col-lg-4 col-md-4">
+                <div class="box-menu">
+                  <a href="<%= request.getContextPath() %>/handle/123456789/1101" class=" matematica">
+                    <i class="icon-matematica"></i>
+                    Matemática<br>
+                    <div class="caret"></div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <div class="box-menu">
+                  <a href="<%= request.getContextPath() %>/handle/123456789/1102" class=" portugues">
+                    <i class="icon-portugues"></i>
+                    Português<br>
+                    <div class="caret"></div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <div class="box-menu">
+                  <a href="<%= request.getContextPath() %>/handle/123456789/1100" class=" Habilidades">
+                    <i class="icon-Habilidades"></i>
+                    Habilidades para a vida<br>
+                    <div class="caret"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+           </div>
+          </div>
+    	</section>
+	</div>
+</div>
+<div class="container">
+
+<div class="container row">
 	<%
-    	int discovery_panel_cols = 8;
-    	int discovery_facet_cols = 4;
+    	int discovery_panel_cols = 12;
+    	int discovery_facet_cols = 3;
     %>
 	<%@ include file="discovery/static-sidebar-facet.jsp" %>
 </div>

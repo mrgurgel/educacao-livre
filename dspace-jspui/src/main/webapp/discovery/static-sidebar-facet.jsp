@@ -61,8 +61,8 @@
 	if (brefine) {
 %>
 <div class="col-md-<%= discovery_panel_cols %>">
-<h3 class="facets"><fmt:message key="jsp.search.facet.refine" /></h3>
-<div id="facets" class="facetsBox row panel">
+<%--h3 class="facets"><fmt:message key="jsp.search.facet.refine" /></h3--%>
+<div id="facets" class="facetsBox row">
 <%
 	for (DiscoverySearchFilterFacet facetConf : facetsConf)
 	{
@@ -78,8 +78,10 @@
  	    }
 	    String fkey = "jsp.search.facet.refine."+f;
 	    int limit = facetConf.getFacetLimit()+1;
-	    %><div id="facet_<%= f %>" class="facet col-md-<%= discovery_facet_cols %>">
-	    <span class="facetName"><fmt:message key="<%= fkey %>" /></span>
+	    %><div id="facet_<%= f %>" class="facet col-md-<%= discovery_facet_cols %>"> <div class="thumbnail icon-<%= f %>">
+	    <div class="icon-facet text-center"><i class="fa fa-<%= f %> fa-4"></i></div>
+	    <div class="white-box">
+	    <h3 class="news-title text-center"><fmt:message key="<%= fkey %>" /></h3>
 	    <ul class="list-group"><%
 	    int idx = 1;
 	    int currFp = UIUtil.getIntParameter(request, f+"_page");
@@ -105,14 +107,14 @@
 		    }
 		    if (currFp > 0 || idx > limit)
 		    {
-		        %><li class="list-group-item"><span style="visibility: hidden;">.</span>
+		        %><li class="list-group-item paginacao"><span style="visibility: hidden;">.</span>
 		        <% if (currFp > 0) { %>
-		        <a class="pull-left" href="<%= request.getContextPath()
+		        <a class="pull-left btn btn-default" href="<%= request.getContextPath()
 		                + searchScope
 		                + "?"+f+"_page="+(currFp-1) %>"><fmt:message key="jsp.search.facet.refine.previous" /></a>
 	            <% } %>
 	            <% if (idx > limit) { %>
-	            <a href="<%= request.getContextPath()
+	            <a class=" btn btn-default pull-right" href="<%= request.getContextPath()
 		            + searchScope
 	                + "?"+f+"_page="+(currFp+1) %>"><span class="pull-right"><fmt:message key="jsp.search.facet.refine.next" /></span></a>
 	            <%
@@ -120,8 +122,10 @@
 	            %></li><%
 		    }
 	    }
-	    %></ul></div><%
-	}
-%></div></div><%
+	    %></ul></div></div></div><%
+	}%>
+
+
+</div></div><%
 	}
 %>

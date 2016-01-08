@@ -51,9 +51,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="<%= request.getContextPath() %>/favicon.ico" type="image/x-icon"/>
 	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/jquery-ui-1.10.3.custom/redmond/jquery-ui-1.10.3.custom.css" type="text/css" />
-	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap.min.css" type="text/css" />
+	    <!-- <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap.min.css" type="text/css" />
 	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap-theme.min.css" type="text/css" />
-	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/dspace-theme.css" type="text/css" />
+	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/dspace-theme.css" type="text/css" /> -->
+
+        <link rel="stylesheet" href="<%= request.getContextPath() %>/theme/thrive/static/css/font-awesome.css" type="text/css" />
+        <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800">
+        <link rel="stylesheet" href="<%= request.getContextPath() %>/theme/thrive/static/css/bootstrap-educacaolivre.css" type="text/css" />
+        <link rel="stylesheet" href="<%= request.getContextPath() %>/theme/thrive/static/css/thrive.css" type="text/css" />
+
 <%
     if (!"NONE".equals(feedRef))
     {
@@ -121,7 +127,7 @@
 
     <%-- HACK: leftmargin, topmargin: for non-CSS compliant Microsoft IE browser --%>
     <%-- HACK: marginwidth, marginheight: for non-CSS compliant Netscape browser --%>
-    <body class="undernavigation">
+    <body class="undernavigation <%= title %>">
 <a class="sr-only" href="#content">Skip navigation</a>
 <header class="navbar navbar-inverse navbar-fixed-top">    
     <%
@@ -147,12 +153,11 @@
 <main id="content" role="main">
 <div class="container banner">
 	<div class="row">
-		<div class="col-md-9 brand">
-		<h1><fmt:message key="jsp.layout.header-default.brand.heading" /></h1>
-        <fmt:message key="jsp.layout.header-default.brand.description" /> 
-        </div>
-        <div class="col-md-3"><img class="pull-right" src="<%= request.getContextPath() %>/image/logo.gif" alt="DSpace logo" />
-        </div>
+        <span class="icon-header-section"><img alt="" src="<%= request.getContextPath() %>/theme/thrive/image/blue-conteudo.svg"></span>
+        <h1 class="title-header">Banco de Conteúdo</h1>
+        <p class="description-header">
+            Alcance o conhecimento necessário para aproveitar as oportunidades.
+        </p>
 	</div>
 </div>	
 <br/>

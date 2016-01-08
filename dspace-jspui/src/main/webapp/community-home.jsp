@@ -101,13 +101,70 @@
   <%= intro %>
 <% } %>
 </div>
+
+
+<%
+  boolean showLogos = ConfigurationManager.getBooleanProperty("jspui.community-home.logos", true);
+    if (collections.length != 0)
+    {
+%>
+  <div class="col-md-12">
+
+        <%-- <h2>Collections in this community</h2> --%>
+    <h1 class="title-header"><fmt:message key="jsp.community-home.heading2"/></h1>
+    <div class="row">
+<%
+        for (int i = 0; i < collections.length; i++)
+        {
+%> 
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 wow fadeInLeft">
+          <div class="row learn-item <%= collections[i].getMetadata("name") %>">
+<%  
+    Bitstream logoCol = collections[i].getLogo();
+    if (showLogos && logoCol != null) { %>
+          <img alt="Logo" class="img-responsive icon-learn-item" src="<%= request.getContextPath() %>/retrieve/<%= logoCol.getID() %>" /> 
+<% } else { %>
+<% }  %>    
+
+        <h4 class="title-learn-item"><%= collections[i].getMetadata("name") %>
+          <%
+            if(ConfigurationManager.getBooleanProperty("webui.strengths.show"))
+            {
+%>
+                [<%= ic.getCount(collections[i]) %>]
+<%
+            }
+%>
+      <% if (remove_button) { %>
+        <form class="btn-group" method="post" action="<%=request.getContextPath()%>/tools/edit-communities">
+            <input type="hidden" name="parent_community_id" value="<%= community.getID() %>" />
+            <input type="hidden" name="community_id" value="<%= community.getID() %>" />
+            <input type="hidden" name="collection_id" value="<%= collections[i].getID() %>" />
+            <input type="hidden" name="action" value="<%=EditCommunitiesServlet.START_DELETE_COLLECTION%>" />
+            <button type="submit" class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-trash"></span></button>
+        </form>
+      <% } %>
+    </h4>
+      <p class="decription-learn-item"><%= collections[i].getMetadata("short_description") %></p>
+      <a class="btn btn-default" href="<%= request.getContextPath() %>/handle/<%= collections[i].getHandle() %>">Aprenda Agora</a>
+    </div>
+  </div>
+<%
+        }
+%>
+  </div>
+</div>
+<%
+    }
+%>
+
 <p class="copyrightText"><%= copyright %></p>
 	<div class="row">
 <%
 	if (rs != null)
 	{ %>
-	<div class="col-md-8">
-        <div class="panel panel-primary">        
+	<div class="col-md-12">
+        <div class="panel recent-submissions panel-primary">        
         <div id="recent-submissions-carousel" class="panel-heading carousel slide">
         <%-- Recently Submitted items --%>
 			<h3><fmt:message key="jsp.community-home.recentsub"/>
@@ -227,7 +284,7 @@
 
     <%
     	int discovery_panel_cols = 12;
-    	int discovery_facet_cols = 4;
+    	int discovery_facet_cols = 3;
     %>
 	<%@ include file="discovery/static-sidebar-facet.jsp" %>
 </div>
@@ -238,7 +295,7 @@
 	
 <div class="row">
 <%
-	boolean showLogos = ConfigurationManager.getBooleanProperty("jspui.community-home.logos", true);
+	
 	if (subcommunities.length != 0)
     {
 %>
@@ -294,62 +351,6 @@
     }
 %>
 
-<%
-    if (collections.length != 0)
-    {
-%>
-	<div class="col-md-6">
-
-        <%-- <h2>Collections in this community</h2> --%>
-		<h3><fmt:message key="jsp.community-home.heading2"/></h3>
-		<div class="list-group">
-<%
-        for (int i = 0; i < collections.length; i++)
-        {
-%>
-			<div class="list-group-item row">  
-<%  
-		Bitstream logoCol = collections[i].getLogo();
-		if (showLogos && logoCol != null) { %>
-			<div class="col-md-3">
-		        <img alt="Logo" class="img-responsive" src="<%= request.getContextPath() %>/retrieve/<%= logoCol.getID() %>" /> 
-			</div>
-			<div class="col-md-9">
-<% } else { %>
-			<div class="col-md-12">
-<% }  %>		
-
-	      <h4 class="list-group-item-heading"><a href="<%= request.getContextPath() %>/handle/<%= collections[i].getHandle() %>">
-	      <%= collections[i].getMetadata("name") %></a>
-<%
-            if(ConfigurationManager.getBooleanProperty("webui.strengths.show"))
-            {
-%>
-                [<%= ic.getCount(collections[i]) %>]
-<%
-            }
-%>
-	    <% if (remove_button) { %>
-	      <form class="btn-group" method="post" action="<%=request.getContextPath()%>/tools/edit-communities">
-	          <input type="hidden" name="parent_community_id" value="<%= community.getID() %>" />
-	          <input type="hidden" name="community_id" value="<%= community.getID() %>" />
-	          <input type="hidden" name="collection_id" value="<%= collections[i].getID() %>" />
-	          <input type="hidden" name="action" value="<%=EditCommunitiesServlet.START_DELETE_COLLECTION%>" />
-	          <button type="submit" class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-trash"></span></button>
-	      </form>
-	    <% } %>
-		</h4>
-      <p class="collectionDescription"><%= collections[i].getMetadata("short_description") %></p>
-    </div>
-  </div>  
-<%
-        }
-%>
-  </div>
-</div>
-<%
-    }
-%>
 </div>
     <% if(editor_button || add_button)  // edit button(s)
     { %>
