@@ -97,7 +97,8 @@
             <list>
                 <ref bean="searchFilterAuthor" />
                 <ref bean="searchFilterSubject" />
-                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterResourceType" />
+		<ref bean="searchFilterProfile" />
             </list>
         </property>
         <!-- Set TagCloud configuration per discovery configuration -->
@@ -105,10 +106,10 @@
         <!--The search filters which can be used on the discovery search page-->
         <property name="searchFilters">
             <list>
-                <ref bean="searchFilterTitle" />
                 <ref bean="searchFilterAuthor" />
                 <ref bean="searchFilterSubject" />
-                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterResourceType" />
+		<ref bean="searchFilterProfile" />
             </list>
         </property>
         <!--The sort filters for the discovery search-->
@@ -202,7 +203,8 @@
             <list>
                 <ref bean="searchFilterAuthor" />
                 <ref bean="searchFilterSubject" />
-                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterResourceType" />
+		<ref bean="searchFilterProfile" />
             </list>
         </property>
         <!-- Set TagCloud configuration per discovery configuration -->
@@ -210,10 +212,10 @@
         <!--The search filters which can be used on the discovery search page (same as defaultConfiguration above)-->
         <property name="searchFilters">
             <list>
-                <ref bean="searchFilterTitle" />
                 <ref bean="searchFilterAuthor" />
                 <ref bean="searchFilterSubject" />
-                <ref bean="searchFilterIssued" />
+                <ref bean="searchFilterResourceType" />
+		<ref bean="searchFilterProfile" />
             </list>
         </property>
         <!--The sort filters for the discovery search (same as defaultConfiguration above)-->
@@ -368,6 +370,28 @@
                 <value>dc.title</value>
             </list>
         </property>
+    </bean>
+
+    <bean id="searchFilterResourceType" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="resourceType"/>
+        <property name="metadataFields">
+            <list>
+                <value>dc.type</value>
+            </list>
+        </property>
+	<property name="sortOrder" value="COUNT"/>
+        <property name="facetLimit" value="10"/>
+    </bean>
+
+    <bean id="searchFilterProfile" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="profileClass"/>
+        <property name="metadataFields">
+            <list>
+                <value>dc.classification.perfil</value>
+            </list>
+        </property>
+	<property name="sortOrder" value="COUNT"/>
+        <property name="facetLimit" value="10"/>
     </bean>
 
     <bean id="searchFilterAuthor" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
