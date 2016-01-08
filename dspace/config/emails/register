@@ -4,13 +4,11 @@
 #
 # See org.dspace.core.Email for information on the format of this file.
 #
-Subject: DSpace Account Registration
-To complete registration for a DSpace account, please click the link
-below:
+Subject: Cadatro no Banco de Conteúdos
+Para completar o seu cadastro no Banco de Conteúdos, por favor clique no link abaixo :
 
   {0}
 
-If you need assistance with your account, please email
-dspace-help@myu.edu or call us at xxx-555-xxxx.
+Caso precise de ajud, por favor entre em contato com a nossa equipe pelo email xxxx@xxxx.br.
 
-The DSpace Team
+Equipe do Banco de Conteúdos

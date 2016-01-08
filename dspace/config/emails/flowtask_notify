@@ -7,17 +7,16 @@
 # {4}  Task result
 # {5}  Workflow action taken
 #
-Subject: DSpace: Curation Task Report
+Subject: Banco de Conteúdos: Informações sobre tarefas de curadoria
 
-Title:         {0}
-Collection:    {1}
-Submitted by:  {2}
+Título:      	 {0}
+Coleção:   		 {1}
+Depositado por:  {2}
 
-Curation task {3} has been performed
-with the following result:
+A tarefa de curadoria {3} foi executada com o seguinte resultado: 
 
 {4}
 
-Action taken on the submission: {5}
+Ações tomadas para o depósito: {5}
 
-DSpace
+Equipe do Banco de Conteúdos

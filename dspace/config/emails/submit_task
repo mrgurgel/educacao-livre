@@ -6,19 +6,18 @@
 # {3}  Description of task
 # {4}  link to 'my DSpace' page 
 #
-Subject: DSpace: You have a new task
+Subject: Banco de Conteúdos: uma nova tarefa
 
-A new item has been submitted:
+Um novo recurso educacional foi depositado:
 
-Title:        {0}
-Collection:   {1}
-Submitted by: {2}
+Título:        {0}
+Coleção:   {1}
+Depositado por: {2}
 
 {3}
 
-To claim this task, please visit your "My DSpace"
-page:  {4}
+Para assumir a tarefa, por favor, visite a sua página em: {4}
 
-Many thanks!
+Obrigado pela atenção
 
-DSpace
+Equipe do Banco de conteúdos

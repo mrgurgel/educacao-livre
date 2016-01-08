@@ -4,9 +4,10 @@
 # Parameters: {0} is the details of the new collections and items
 # See org.dspace.core.Email for information on the format of this file.
 #
-Subject: DSpace Subscription
-New items are available in the collections you have subscribed to:
+Subject: Notificação do Banco de Conteúdos
+Novos recursos educacionais estão disponíveis nas coleções:
 
 {0}
 
-DSpace
+Equipe do Banco de conteúdos
+Para maiores informações, veja em: http://www.educacaolivre.org.br/

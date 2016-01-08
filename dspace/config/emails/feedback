@@ -10,17 +10,17 @@
 #
 # See org.dspace.core.Email for information on the format of this file.
 #
-Subject: Feedback Form Information
+Subject: Formulário de Feedback 
 
-Comments:
+Comentários:
 
 {6}
 
 
-Date: {0}
+Data: {0}
 Email: {1}
-Logged In As: {2}
-Referring Page: {3}
-User Agent: {4}
-Session: {5}
+Logado como: {2}
+Página relacionada: {3}
+usuário: {4}
+sessão: {5}
 
