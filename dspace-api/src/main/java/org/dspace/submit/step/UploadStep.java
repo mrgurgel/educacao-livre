@@ -258,22 +258,52 @@ public class UploadStep extends AbstractProcessingStep
             subInfo.setBitstream(null);
         }
 
-        // -------------------------------------------------
-        // Step #3: Check for a change in file description
-        // -------------------------------------------------
-        String fileDescription = request.getParameter("description");
+        // ------------------------------------------------- 
+        // Step #3: Check for a change in file description 
+        // ------------------------------------------------- 
+	/**
+	*   This solution was taken from http://dspace.2283337.n4.nabble.com/quot-integrity-quot-error-on-file-uploads-td4676521.html
+	*   thanks to mwhite and Macdonald
+	*   
+	*   Essa solução foi obtida em:  http://dspace.2283337.n4.nabble.com/quot-integrity-quot-error-on-file-uploads-td4676521.html
+	*   obrigado a mwhite e Macdonald
+	*   
+	*/
+        String fileDescription = request.getParameter("description"); 
+        if (fileDescription != null && fileDescription.length() > 0) 
+        { 
+            // --------------------------------------------- 
+            // Every time I tried adding an item to a collection 
+            // I would get an error message about Malformed item 
+            // Traced this to this method - file upload happens 
+            // but then this method gets called to set the description 
+            // and the bitstream the /second/ time round is null. 
+            // So we get the  bitstream from the Item object and 
+            // set the description string on that. Not sure if that 
+            // is the right thing to do but it seems to work... 
+            //  D I Macdonald 2015-02-06 
+            // ---------------------------------------------- 
+            if (subInfo.getBitstream() == null) 
+            { 
+                if (item != null) 
+                { 
+                    Bundle[] bundle = item.getBundles("ORIGINAL"); 
+                    if (bundle.length!=0) 
+                    { 
+                        Bitstream[] bitstreams = bundle[0].getBitstreams(); 
+                        if (bitstreams[0] !=null) subInfo.setBitstream(bitstreams[0]); 
+                    } 
+                } 
+            } // - - end of DI insert 
 
-        if (fileDescription != null && fileDescription.length() > 0)
-        {
-            // save this file description
-            int status = processSaveFileDescription(context, request, response,
-                    subInfo);
+            // save this file description 
+            int status = processSaveFileDescription(context, request, response, subInfo); 
 
-            // if error occurred, return immediately
-            if (status != STATUS_COMPLETE)
-            {
-                return status;
-            }
+            // if error occurred, return immediately 
+            if (status != STATUS_COMPLETE) 
+            { 
+                return status; 
+            } 
         }
 
         // ------------------------------------------
