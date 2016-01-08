@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node id="C" label="conteúdo">
+	<isComposedBy>
+				<node id="C1" label="Formas de linguagens e intertextualidade">
+					<isComposedBy>
+						<node id="C10" label="Linguagem verbal e não verbal"/>
+						<node id="C11" label="Elementos constitutivos das linguagens"/>
+						<node id="C12" label="Articulação entre texto escrito e imagem"/>
+						<node id="C13" label="Intertextualidade"/>
+					</isComposedBy>
+				</node>
+				<node id="C2" label="LP como patrimônio, Variação linguística e Coerência">
+					<isComposedBy>
+						<node id="C21" label="Língua portuguesa como patrimônio dos brasileiros"/>
+						<node id="C22" label="Língua como instância de poder"/>
+						<node id="C23" label="Relações assimétricas na comunicação verbal"/>
+						<node id="C24" label="Variação linguística"/>
+						<node id="C25" label="Conceito de erro e de desvio linguístico"/>
+						<node id="C26" label="Fala e língua escrita"/>
+						<node id="C27" label="Adequação do registro utilizado ao contexto de uso da língua"/>
+					</isComposedBy>
+				</node>
+				<node id="C3" label="Gêneros Textuais, leitura e tipos de discursos">
+					<isComposedBy>
+						<node id="C31" label="Elementos constitutivos dos gêneros textuais"/>
+						<node id="C32" label="Funções da linguagem"/>
+						<node id="C33" label="Estratégias de leitura"/>
+						<node id="C34" label="Tipos de discurso"/>
+						<node id="C35" label="Vozes textuais"/>
+						<node id="C36" label="Impessoalidade no discurso"/>
+						<node id="C37" label="Intencionalidade"/>
+						<node id="C38" label="Implícitos"/>
+						<node id="C39" label="Inferências"/>
+						<node id="C310" label="Discurso autoritário e modalizado"/>
+						<node id="C311" label="Coerência"/>
+					</isComposedBy>
+				</node>
+				<node id="C4" label="Semântica, sintática e gramática">
+					<isComposedBy>
+						<node id="C41" label="Princípios estruturais da língua"/>
+						<node id="C42" label="caracterização dos níveis semântico e sintático"/>
+						<node id="C43" label="relações semântico-sintáticas"/>
+						<node id="C44" label="norma gramatical"/>
+						<node id="C45" label="análise de dados linguísticos e dedução de princípios estruturais"/>
+						<node id="C46" label="ambiguidade estrutural e semântica"/>
+						<node id="C47" label="ordem direta e inversa"/>
+					</isComposedBy>
+				</node>
+				<node id="C5" label="Produção de textos e convenções da escrita">
+					<isComposedBy>
+						<node id="C51" label="Estratégias de leitura"/>
+						<node id="C52" label="Análise, interpretação e produção de textos "/>
+						<node id="C53" label="Ampliação do vocabulário ativo e passivo"/>
+						<node id="C54" label="Ppolissemia"/>
+						<node id="C55" label="Discurso direto e indireto"/>
+						<node id="C56" label="Conectores e articuladores textuais"/>
+						<node id="C57" label="Convenções da escrita"/>
+						<node id="C58" label="Morfologia"/>
+						<node id="C59" label="Regência"/>
+						<node id="C510" label="Concordância"/>
+						<node id="C511" label="Mecanismos de coesão"/>
+						<node id="C512" label="Paráfrases"/>
+						<node id="C513" label="Paródia"/>
+						<node id="C514" label="Resumo"/>
+					</isComposedBy>
+				</node>
+				<node id="C6" label="Linguagens artísticas">
+					<isComposedBy>
+						<node id="C61" label="Apreciação das diversas linguagens artísticas"/>
+						<node id="C62" label="práticas corporais e sua relação com outras manifestações culturais"/>
+						<node id="C63" label="construção por analogia"/>
+						<node id="C64" label="linguagem figurada"/>
+						<node id="C65" label="repertório literário e cultural"/>
+					</isComposedBy>
+				</node>
+				<node id="C7" label="Línguas Estrangeiras modernas">
+					<isComposedBy>
+						<node id="C71" label="Elementos básicos das interações comunicativas coloquiais e de natureza técnica em LEMs"/>
+						<node id="C72" label="Produções textuais orais e escritas"/>
+					</isComposedBy>
+				</node>
+				<node id="C8" label="Comunicação Tecnológica">
+					<isComposedBy>
+						<node id="C81" label="Globalização e novas tecnologias de comunicação e informação"/>
+						<node id="C82" label="Caracterização dos interlocutores na comunicação tecnológica"/>
+						<node id="C83" label="Recursos linguísticos e gêneros digitais"/>
+						<node id="C84" label="Função social, política e econômica das novas tecnologias"/>
+					</isComposedBy>
+				</node>
+				<node id="C9" label="Números, operações e grandezas">
+					<isComposedBy>
+						<node id="C91" label="Conhecimentos numéricos"/>
+						<node id="C92" label="operações em conjuntos numéricos "/>
+						<node id="C93" label="desigualdades, divisibilidade, fatoração, razões e proporções, porcentagem e juros, relações de dependência entre grandezas, sequências, princípios básicos de contagem"/>
+						<node id="C94" label="expressões numéricas"/>
+						<node id="C95" label="sistema monetário brasileiro"/>
+					</isComposedBy>
+				</node>
+				<node id="C10" label="Geometria">
+					<isComposedBy>
+						<node id="C101" label="Conhecimentos geométricos e métricos"/>
+						<node id="C102" label="Características das figuras geométricas planas e espaciais"/>
+						<node id="C103" label="Grandezas, sistemas e unidades de medida"/>
+						<node id="C204" label="escalas"/>
+						<node id="C105" label="comprimentos, áreas e volumes"/>
+						<node id="C106" label="ângulos"/>
+						<node id="C107" label="simetrias de figuras planas e espaciais"/>
+						<node id="C108" label="congruência e semelhança de triângulos"/>
+						<node id="C109" label="teorema de Tales"/>
+						<node id="C1010" label="Relações métricas e trigonométricas nos triângulos"/>
+						<node id="C1011" label="trigonometria do ângulo agudo"/>
+						<node id="C1012" label="fractais"/>
+					</isComposedBy>
+				</node>
+				<node id="C11" label="Álgebra">
+					<isComposedBy>
+						<node id="C111" label="Conhecimentos algébricos"/>
+						<node id="C112" label="cálculo algébrico"/>
+						<node id="C113" label="polinômios"/>
+						<node id="C114" label="equações de 1º e 2º graus"/>
+						<node id="C115" label="sistemas de equações"/>
+						<node id="C116" label="plano cartesiano"/>
+						<node id="C117" label="noções básicas sobre funções e gráficos"/>
+					</isComposedBy>
+				</node>
+				<node id="C12" label="Informação, gráficos e tabelas">
+					<isComposedBy>
+						<node id="C121" label="Tratamento da informação"/>
+						<node id="C122" label="construção de tabelas e gráficos"/>
+						<node id="C123" label="leitura e interpretação de tabelas e gráficos"/>
+					</isComposedBy>
+				</node>
+				<node id="C13" label="Relação homem-natureza">
+					<isComposedBy>
+						<node id="C131" label="Domínios naturais e relação do ser humano com o ambiente"/>
+						<node id="C132" label="impacto ambiental das atividades econômicas"/>
+						<node id="C133" label="recursos minerais e energéticos"/>
+						<node id="C134" label="uso e conservação dos recursos naturais"/>
+						<node id="C135" label="sustentabilidade"/>
+					</isComposedBy>
+				</node>
+				<node id="C14" label="Cidadania">
+					<isComposedBy>
+						<node id="C141" label="Conquista de direitos pelos cidadãos"/>
+						<node id="C142" label="deveres dos cidadãos"/>
+						<node id="C143" label="direitos sociais na Constituição brasileira"/>
+						<node id="C144" label="políticas afirmativas"/>
+					</isComposedBy>
+				</node>
+				<node id="C15" label="Cultura material e imaterial">
+					<isComposedBy>
+						<node id="C151" label="Cultura material e imaterial"/>
+						<node id="C152" label="características do patrimônio cultural ao longo da História"/>
+						<node id="C153" label="patrimônio e diversidade cultural no Brasil"/>
+						<node id="C154" label="contribuições culturais dos diferentes grupos étnicos formadores da sociedade brasileira"/>
+						<node id="C155" label="arte e práticas culturais no contexto da cultura urbana"/>
+						<node id="C156" label="preservação e conservação do patrimônio material e imaterial"/>
+					</isComposedBy>
+				</node>
+				<node id="C16" label="Qualidade de vida e desenvolvimento humano">
+					<isComposedBy>
+						<node id="C161" label="Qualidade de vida das populações humanas"/>
+						<node id="C162" label="índice de desenvolvimento humano"/>
+						<node id="C163" label="bem-estar, saúde e segurança no trabalho"/>
+						<node id="C164" label="equipamentos de proteção individual (EPIs)"/>
+						<node id="C165" label="noções de primeiros socorros"/>
+						<node id="C166" label="efeitos do uso de drogas"/>
+						<node id="C167" label="violência e segurança pública"/>
+					</isComposedBy>
+				</node>
+				<node id="C17" label="Relações humanas no trabalho">
+					<isComposedBy>
+						<node id="C171" label="Relações humanas no trabalho"/>
+						<node id="C172" label="clima organizacional"/>
+						<node id="C173" label="desempenho profissional"/>
+						<node id="C174" label="ética e relacionamento interpessoal"/>
+						<node id="C175" label="relações com a autoridade"/>
+						<node id="C176" label="convenções sociais na comunicação, regras e normas sociais na relação indivíduo e trabalho, desenvolvimento de equipes de trabalho, processos de comunicação, cooperação e colaboração"/>
+					</isComposedBy>
+				</node>
+				<node id="C18" label="Identidade e organização social">
+					<isComposedBy>
+						<node id="C181" label="Identidade, cultura e sociedade"/>
+						<node id="C182" label="projeto de vida"/>
+						<node id="C183" label="ressignificação de valores"/>
+						<node id="C184" label="capacidade do sujeito de produzir conhecimento"/>
+						<node id="C185" label="modificar sua história e classificar os elementos da natureza e da cultura"/>
+						<node id="C186" label="novas formas de relação e de construção da sociedade contemporânea"/>
+						<node id="C187" label="estruturas de poder e decisão"/>
+						<node id="C188" label="compromisso social"/>
+						<node id="C189" label="resiliência e desafios atuai"/>
+						<node id="C1810" label="partidos políticos, associações, movimentos sociais, movimentos artísticos e culturais, ONGs, sindicatos, redes e grupos de relacionamento"/>
+					</isComposedBy>
+				</node>
+				<node id="C19" label="Letramento digital">
+					<isComposedBy>
+						<node id="C191" label="Letramento digital e autoria na cibercultura"/>
+						<node id="C192" label="a internet e a seleção de fontes de informações fidedignas como recursos para o autoaprimoramento"/>
+						<node id="C193" label="formação de redes sociais"/>
+						<node id="C194" label="autonomia e visão crítica na navegação na web diante dos riscos e perigos de vícios"/>
+						<node id="C195" label="autoria e ética na web "/>
+					</isComposedBy>
+				</node>
+				<node id="C20" label="Tecnologia e o trabalho na indústria">
+					<isComposedBy>
+						<node id="C201" label="Transformações tecnológicas e o perfil do trabalhador do setor indústria"/>
+						<node id="C202" label="o universo da indústria"/>
+						<node id="C203" label="a formação profissional"/>
+						<node id="C204" label="perfil profissional e identidade do trabalhador"/>
+						<node id="C205" label="desafios do mundo do trabalho"/>
+						<node id="C206" label="pensamento crítico e inovação como recursos para a produção de bens ou serviços com valor agregado"/>
+					</isComposedBy>
+				</node>
+				<node id="C21" label="Valores, crenças e atitudes">
+					<isComposedBy>
+						<node id="C211" label="Valores, crenças e atitudes"/>
+						<node id="C212" label="tradições e mudanças sociais"/>
+						<node id="C213" label="personagens da história e acontecimentos representativos"/>
+						<node id="C214" label="minorias (étnicas, religiosas, gênero, raça)"/>
+						<node id="C215" label="arte e cultura (música, artes visuais, literatura)"/>
+					</isComposedBy>
+				</node>
+	</isComposedBy>
+</node>	
+
+
+
+	
+	
+
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node id="C" label="competências">
+	<isComposedBy>
+		<node id="C00" label="Técnicas">
+			<isComposedBy>
+				<node id="C1" label="C1 Língua e linguagem"/>
+				<node id="C2" label="C2 Produção de texto"/>
+				<node id="C3" label="C3 Recursos discursivos"/>
+				<node id="C4" label="C4 Arte e cultura"/>
+				<node id="C5" label="C5 Números"/>
+				<node id="C6" label="C6 Álgebra"/>
+				<node id="C7" label="C7 Geometria"/>
+				<node id="C8" label="C8 Gráficos e tabelas"/>
+				<node id="C9" label="C9 Interpretação de dados e conceitos"/>
+				<node id="C10" label="C10 Formulação de hipóteses e conjecturas"/>
+				<node id="C11" label="C11 Tecnologia da informação e comunicação"/>
+			</isComposedBy>
+		</node>
+		<node id="C01" label="Pessoais">
+			<isComposedBy>
+				<node id="C12" label="C12 Expressão verbal e não verbal"/> 
+				<node id="C13" label="C13 Formulação de argumentos"/>
+				<node id="C14" label="C14 Síntese e organização da informação"/>
+				<node id="C15" label="C15 Análise de contexto e tomada de decisão"/>
+				<node id="C16" label="C16 Planejamento"/>
+				<node id="C17" label="C17 Reflexão e reformulação de opinião"/>
+				<node id="C18" label="C18 Autodeterminação"/>
+			</isComposedBy>
+		</node>
+		<node id="C02" label="Sociais, éticas e estéticas">
+			<isComposedBy>
+				<node id="C19" label="C19 Relacionamento interpessoal"/>
+				<node id="C20" label="C20 Regras de convivência"/>
+				<node id="C21" label="C21 Autocontrole e flexibilidade"/>
+				<node id="C22" label="C22Posicionamento crítico e criatividade "/>
+				<node id="C23" label="C23 Patrimônio material e imaterial"/>
+				<node id="C24" label="C24 Bem-estar e saúde"/>
+				<node id="C25" label="C25 Diversidade"/>
+				<node id="C26" label="C26 Cidadania, responsabilidade social e ambiental"/>
+			</isComposedBy>
+		</node>
+	</isComposedBy>
+</node>
+	
+	
+	
+	 
+	
+	
+
+
