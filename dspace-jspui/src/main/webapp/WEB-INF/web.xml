@@ -344,6 +344,11 @@
     <servlet-name>password-login</servlet-name>
     <servlet-class>org.dspace.app.webui.servlet.PasswordServlet</servlet-class>
   </servlet>
+  
+  <servlet>
+    <servlet-name>oauth-login</servlet-name>
+    <servlet-class>org.dspace.app.webui.servlet.OauthServlet</servlet-class>
+  </servlet>
 
   <servlet>
     <servlet-name>ldap-login</servlet-name>
@@ -684,6 +689,11 @@
   <servlet-mapping>
     <servlet-name>password-login</servlet-name>
     <url-pattern>/password-login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>oauth-login</servlet-name>
+    <url-pattern>/oauth-login</url-pattern>
   </servlet-mapping>
 
   <servlet-mapping>

@@ -639,6 +639,14 @@
             <version>1</version>
             <type>jar</type>
         </dependency>
+        
+        <!--Para autenticação por Oauth com o portal Educação Livre-->
+        <!--Para fazer as requisições por rest para a API-->
+        <dependency>
+            <groupId>com.mashape.unirest</groupId>
+            <artifactId>unirest-java</artifactId>
+            <version>1.4.7</version>
+        </dependency>
     </dependencies>
 
 </project>
