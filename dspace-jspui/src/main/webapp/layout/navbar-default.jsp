@@ -81,7 +81,7 @@ BrowseIndex bix = binfo.getBrowseIndex();
      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
        <span class="glyphicon glyphicon-menu-hamburger"></span>
      </button>
-     <a class="navbar-brand" href="<%= request.getContextPath() %>/"><img src="<%= request.getContextPath() %>/theme/thrive/image/logo.svg" alt="Educação Livre Logo" /></a>
+     <a class="navbar-brand" href="http://www.educacaolivre.org.br/portal/"><img src="<%= request.getContextPath() %>/theme/thrive/image/logo.svg" alt="Educação Livre Logo" /></a>
    </div>
    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
      <ul class="nav navbar-nav">
