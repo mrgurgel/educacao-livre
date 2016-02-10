@@ -100,7 +100,7 @@
                <input-type>onebox</input-type>
                <hint>Classificação das competências do recurso educacional no Banco de Conteúdo.</hint>
                <required></required>
-			   <vocabulary>cpt</vocabulary>
+	       <vocabulary>cpt</vocabulary>
             </field>
 
             <field>
@@ -112,8 +112,8 @@
                <input-type>onebox</input-type>
                <hint>Classificação do recurso educacional no Banco de Conteúdo.</hint>
                <required></required>
-			   <vocabulary>ctd</vocabulary>
-		   </field>
+	       <vocabulary>ctd</vocabulary>
+	    </field>
 
             <field>
                <dc-schema>dc</dc-schema>
