@@ -32,7 +32,8 @@ public class Token {
         String token2 = decryptToken.substring(20, 40);
         String token3 = decryptToken.substring(40, 60);
         String token4 = decryptToken.substring(60, 80);
-        String tokenEmail = decryptToken.substring(80);
+        //estava dando erro no email, pois vinha um caracter não ASCII no final do token.
+        String tokenEmail = decryptToken.substring(80).replaceAll("[^ -~]", "").trim();
 
         this.accessToken = token1.concat(token3);
         this.refreshToken = token2.concat(token4);
