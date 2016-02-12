@@ -5,7 +5,11 @@
  */
 package org.dspace.authenticate.oauth;
 
-import javax.xml.bind.DatatypeConverter;
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
+import org.apache.commons.codec.binary.Base64;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  *
@@ -19,14 +23,24 @@ public class Token {
 
     private final String email;
 
+    private static final Logger log = LoggerFactory.getLogger(Token.class);
+
     /**
      * Receive the token and decrypt it, turning into a {@link Token} object.
      *
      * @param token A string containing lexical representation of xsd:base64Binary. Token must be 80 character plus
      * email.
      */
-    public Token(String token) {
-        byte[] byteToken = DatatypeConverter.parseBase64Binary(token);
+    public Token(String token) throws TokenInvalidExeption {
+        try {
+            token = URLDecoder.decode(token, "UTF-8");
+        } catch (UnsupportedEncodingException ex) {
+            log.error("Error decoding the token!", ex);
+            throw new TokenInvalidExeption("Error decoding the token!", ex);
+        }
+        byte[] byteToken = Base64.decodeBase64(token);
+        log.debug("decodeBase64: " + new String(byteToken) + "\n");
+
         String decryptToken = new String(byteToken);
         String token1 = decryptToken.substring(0, 20);
         String token2 = decryptToken.substring(20, 40);
@@ -53,7 +67,7 @@ public class Token {
 
         String token = token1+token3+token2+token4+email;
 
-        return DatatypeConverter.printBase64Binary(token.getBytes());
+        return Base64.encodeBase64String(token.getBytes());
     }
 
     /**

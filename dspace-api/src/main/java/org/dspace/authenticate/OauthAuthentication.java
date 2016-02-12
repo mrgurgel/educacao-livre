@@ -147,6 +147,7 @@ public class OauthAuthentication implements AuthenticationMethod {
                 }
             }
         } catch (SQLException | TokenInvalidExeption e) {
+            log.error("Error getting special groups", e);
             // The user is not a password user, so we don't need to worry about them
         }
         return new int[0];
@@ -241,7 +242,10 @@ public class OauthAuthentication implements AuthenticationMethod {
                 return SUCCESS;
             }
 
-        } catch (UnirestException | TokenInvalidExeption ex) {
+        } catch (TokenInvalidExeption ex) {
+            log.error("The token is invalid!.", ex);
+            return BAD_CREDENTIALS;
+        } catch (UnirestException ex) {
             log.error("An error occurred while updating the token.", ex);
             return BAD_CREDENTIALS;
         } catch (AuthorizeException ce) {
