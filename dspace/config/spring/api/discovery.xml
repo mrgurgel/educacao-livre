@@ -380,7 +380,7 @@
             </list>
         </property>
 	<property name="sortOrder" value="COUNT"/>
-        <property name="facetLimit" value="10"/>
+        <property name="facetLimit" value="8"/>
     </bean>
 
     <bean id="searchFilterProfile" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
@@ -391,7 +391,7 @@
             </list>
         </property>
 	<property name="sortOrder" value="COUNT"/>
-        <property name="facetLimit" value="10"/>
+        <property name="facetLimit" value="8"/>
     </bean>
 
     <bean id="searchFilterAuthor" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
@@ -402,7 +402,7 @@
                 <value>dc.creator</value>
             </list>
         </property>
-        <property name="facetLimit" value="10"/>
+        <property name="facetLimit" value="8"/>
         <property name="sortOrder" value="COUNT"/>
     </bean>
 
@@ -413,7 +413,7 @@
                 <value>dc.subject.*</value>
             </list>
         </property>
-        <property name="facetLimit" value="10"/>
+        <property name="facetLimit" value="8"/>
         <property name="sortOrder" value="COUNT"/>
         <property name="splitter" value="::"/>
     </bean>
