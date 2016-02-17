@@ -141,24 +141,6 @@ BrowseIndex bix = binfo.getBrowseIndex();
          %>
          <div class="nav navbar-nav navbar-right">
           <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><fmt:message key="jsp.layout.navbar-default.language"/><b class="caret"></b></a>
-             <ul class="dropdown-menu">
-               <%
-               for (int i = supportedLocales.length-1; i >= 0; i--)
-                 {
-                   %>
-                   <li>
-                    <a onclick="javascript:document.repost.locale.value='<%=supportedLocales[i].toString()%>';
-                      document.repost.submit();" href="<%= request.getContextPath() %>?locale=<%=supportedLocales[i].toString()%>">
-                      <%= supportedLocales[i].getDisplayLanguage(supportedLocales[i])%>
-                    </a>
-                  </li>
-                  <%
-                }
-                %>
-              </ul>
-            </li>
           </ul>
         </div>
         <%
