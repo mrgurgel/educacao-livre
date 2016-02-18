@@ -32,9 +32,12 @@
 
 
 <dspace:layout titlekey="jsp.statistics.title">
-<h1><fmt:message key="jsp.statistics.title"/></h1>
-<h2><fmt:message key="jsp.statistics.heading.visits"/></h2>
-<table class="statsTable">
+<div class="panel panel-primary panel-statistics">
+<h1 class="panel-heading text-center"><fmt:message key="jsp.statistics.title"/></h1>
+<div class="data">
+<div class="panel-heading text-center"><fmt:message key="jsp.statistics.heading.visits"/></div>
+<table class="statsTable table">
+<tbody>
 <tr>
 <th><!-- spacer cell --></th>
 <th><fmt:message key="jsp.statistics.heading.views"/></th>
@@ -58,10 +61,11 @@
 </c:forEach>
 </tr>
 </c:forEach>
+</tbody>
 </table>
 
-<h2><fmt:message key="jsp.statistics.heading.monthlyvisits"/></h2>
-<table class="statsTable">
+<div class="panel-heading text-center"><fmt:message key="jsp.statistics.heading.monthlyvisits"/></div>
+<table class="statsTable table">
 <tr>
 <th><!-- spacer cell --></th>
 <c:forEach items="${statsMonthlyVisits.colLabels}" var="headerlabel" varStatus="counter">
@@ -94,8 +98,8 @@
 
 <% if(isItem) { %>
 
-<h2><fmt:message key="jsp.statistics.heading.filedownloads"/></h2>
-<table class="statsTable">
+<div class="panel-heading text-center"><fmt:message key="jsp.statistics.heading.filedownloads"/></div>
+<table class="statsTable table">
 <tr>
 <th><!-- spacer cell --></th>
 <th><fmt:message key="jsp.statistics.heading.views"/></th>
@@ -123,8 +127,8 @@
 
 <% } %>
 
-<h2><fmt:message key="jsp.statistics.heading.countryvisits"/></h2>
-<table class="statsTable">
+<div class="panel-heading text-center"><fmt:message key="jsp.statistics.heading.countryvisits"/></div>
+<table class="statsTable table">
 <tr>
 <th><!-- spacer cell --></th>
 <th><fmt:message key="jsp.statistics.heading.views"/></th>
@@ -150,8 +154,8 @@
 </c:forEach>
 </table>
 
-<h2><fmt:message key="jsp.statistics.heading.cityvisits"/></h2>
-<table class="statsTable">
+<div class="panel-heading text-center"><fmt:message key="jsp.statistics.heading.cityvisits"/></div>
+<table class="statsTable table">
 <tr>
 <th><!-- spacer cell --></th>
 <th><fmt:message key="jsp.statistics.heading.views"/></th>
@@ -176,8 +180,8 @@
 </c:forEach>
 </c:forEach>
 </table>
-
-
+</div>
+</div>
 </dspace:layout>
 
 

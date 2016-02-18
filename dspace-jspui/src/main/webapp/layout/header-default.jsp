@@ -153,11 +153,21 @@
 <main id="content" role="main">
 <div class="container banner">
 	<div class="row">
-        <span class="icon-header-section"><img alt="" src="<%= request.getContextPath() %>/theme/thrive/image/blue-conteudo.svg"></span>
-        <h1 class="title-header">Banco de Conteúdo</h1>
+        <a class="link_home" href="<%= request.getContextPath() %>">
+            <span class="icon-header-section"><img alt="" src="<%= request.getContextPath() %>/theme/thrive/image/blue-conteudo.svg"></span>
+            <h1 class="title-header">Banco de Conteúdos</h1>
+        </a>
         <p class="description-header">
             Alcance o conhecimento necessário para aproveitar as oportunidades.
         </p>
+        <form method="get" action="<%= request.getContextPath() %>/simple-search" class="home-search simple-search col-lg-push-3 col-lg-6 col-md-12">
+            <div class="form-group col-md-10 col-lg-11">
+                <input type="text" class="form-control" placeholder="<fmt:message key="jsp.layout.navbar-default.search"/>" name="query2" id="tequery2" size="25"/>
+            </div>
+            <button type="submit" class="btn btn-default">
+                <span class="glyphicon glyphicon-search"></span>
+            </button>
+        </form>
 	</div>
 </div>	
 <br/>

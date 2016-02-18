@@ -35,7 +35,6 @@ input[type="text"] {
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset, 0 1px 5px rgba(0, 0, 0, 0.075);
 }
 
-
 .glyphicon-menu-hamburger:before {
   content:"\e236";
 }
@@ -57,8 +56,31 @@ input[type="text"] {
     background-color: #e7e7e7;
 }
 
+.navbar-inverse .navbar-nav .glyphicon-user-small {
+	font-size: 16px;
+}
+
 .container.banner {
 	padding-top: 30px;
+}
+
+.link_home:hover{
+	text-decoration: none;
+}
+
+/* Home Search */
+.home-search .form-group {
+	padding: 0;
+}
+
+.home-search.simple-search input {
+	margin-left: 4px;
+}
+
+.home-search button.btn {
+	margin-left: -1px;
+	font-size: 20px;
+	padding: 6px 11px;
 }
 
 .breadcrumb li {
@@ -587,7 +609,7 @@ body.Português main .container div.well:hover {
 }
 
 
-body.Objetos.Educacionais main .container div.well,
+body.Recursos.Educacionais main .container div.well,
 body.Communities.and.Collections main .container div.well,
 body.Comunidades.e.Coleções main .container div.well{
 	background: #FFB200;
@@ -599,11 +621,19 @@ body.Comunidades.e.Coleções main .container div.well{
 
 }
 
-body.Objetos.Educacionais main .container div.well:hover,
+body.Recursos.Educacionais main .container div.well:hover,
 body.Communities.and.Collections .container div.well:hover,
 body.Comunidades.e.Coleções .container div.well:hover{
 	background: #e6b700;
 	transition: all 0.3s ease-in-out 0s;
+}
+
+body main .container div.item-well {
+	background: #ffb200;
+}
+
+body main .container div.item-well:hover {
+	background: #e6b700;
 }
 
 /*** Coleções na pagina da Comunidade **/
@@ -682,4 +712,25 @@ div.panel-primary .panel-heading {
 /*** LOGIN ***/
 form#loginform .row .col-md-6 {
 	padding-right: 0px;
+}
+
+/*** Estatísticas ***/
+
+.panel-statistics .data {
+	padding: 20px;
+}
+
+.panel-statistics h1.panel-heading{
+	margin-top: 0;
+	text-align: left;
+}
+
+body div.panel-statistics div.panel-heading{
+	background-color: #d9edf7;
+    border-color: #bce8f1;
+    color: #31708f;
+}
+
+.panel-statistics h2 {
+	color: #006696;
 }
