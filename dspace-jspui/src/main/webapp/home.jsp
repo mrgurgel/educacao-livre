@@ -52,7 +52,7 @@
     {
         feedData = "ALL:" + ConfigurationManager.getProperty("webui.feed.formats");
     }
-    
+
     ItemCounter ic = new ItemCounter(UIUtil.obtainContext(request));
 
     RecentSubmissions submissions = (RecentSubmissions) request.getAttribute("recent.submissions");
@@ -66,7 +66,7 @@ if (submissions != null && submissions.count() > 0)
 {
 %>
         <div class="col-md-8">
-        <div class="panel panel-primary">        
+        <div class="panel panel-primary">
         <div id="recent-submissions-carousel" class="panel-heading carousel slide">
           <h3><fmt:message key="jsp.collection-home.recentsub"/>
               <%
@@ -99,7 +99,7 @@ if (submissions != null && submissions.count() > 0)
 	    }
 	%>
           </h3>
-          
+
 		  <!-- Wrapper for slides -->
 		  <div class="carousel-inner">
 		    <%
@@ -120,7 +120,7 @@ if (submissions != null && submissions.count() > 0)
 		        }
 		%>
 		    <div style="padding-bottom: 50px; min-height: 200px;" class="item <%= first?"active":""%>">
-		      <div style="padding-left: 80px; padding-right: 80px; display: inline-block;"><%= StringUtils.abbreviate(displayTitle, 400) %> 
+		      <div style="padding-left: 80px; padding-right: 80px; display: inline-block;"><%= StringUtils.abbreviate(displayTitle, 400) %>
 		      	<a href="<%= request.getContextPath() %>/handle/<%=item.getHandle() %>" class="btn btn-success">See</a>
                         <p><%= StringUtils.abbreviate(displayAbstract, 500) %></p>
 		      </div>
@@ -155,8 +155,8 @@ if (submissions != null && submissions.count() > 0)
  <%
 if (communities != null && communities.length != 0)
 {
-%> 
-	<div class="col-md-12">		
+%>
+	<div class="col-md-12">
                <h3><fmt:message key="jsp.home.com1"/></h3>
                 <p><fmt:message key="jsp.home.com2"/></p>
 				<div class="list-group">
@@ -165,16 +165,16 @@ if (communities != null && communities.length != 0)
     for (int i = 0; i < communities.length; i++)
     {
 %><div class="list-group-item row">
-<%  
+<%
 		Bitstream logo = communities[i].getLogo();
 		if (showLogos && logo != null) { %>
 	<div class="col-md-3">
-        <img alt="Logo" class="img-responsive" src="<%= request.getContextPath() %>/retrieve/<%= logo.getID() %>" /> 
+        <img alt="Logo" class="img-responsive" src="<%= request.getContextPath() %>/retrieve/<%= logo.getID() %>" />
 	</div>
 	<div class="col-md-9">
 <% } else { %>
 	<div class="col-md-12">
-<% }  %>		
+<% }  %>
 		<h4 class="list-group-item-heading"><a href="<%= request.getContextPath() %>/handle/<%= communities[i].getHandle() %>"><%= communities[i].getMetadata("name") %></a>
 <%
         if (ConfigurationManager.getBooleanProperty("webui.strengths.show"))
@@ -188,7 +188,7 @@ if (communities != null && communities.length != 0)
 		</h4>
 		<p><%= communities[i].getMetadata("short_description") %></p>
     </div>
-</div>                            
+</div>
 
     }
 
@@ -209,7 +209,7 @@ if (communities != null && communities.length != 0)
             <div class="col-lg-12 col-md-12">
               <div class="col-lg-4 col-md-4">
                 <div class="box-menu">
-                  <a href="<%= request.getContextPath() %>/handle/123456789/1101" class=" matematica">
+                  <a href="<%= request.getContextPath() %>/handle/avante/1101" class=" matematica">
                     <i class="icon-matematica"></i>
                     Matemática<br>
                     <div class="caret"></div>
@@ -218,7 +218,7 @@ if (communities != null && communities.length != 0)
               </div>
               <div class="col-lg-4 col-md-4">
                 <div class="box-menu">
-                  <a href="<%= request.getContextPath() %>/handle/123456789/1102" class=" portugues">
+                  <a href="<%= request.getContextPath() %>/handle/avante/1102" class=" portugues">
                     <i class="icon-portugues"></i>
                     Português<br>
                     <div class="caret"></div>
@@ -227,7 +227,7 @@ if (communities != null && communities.length != 0)
               </div>
               <div class="col-lg-4 col-md-4">
                 <div class="box-menu">
-                  <a href="<%= request.getContextPath() %>/handle/123456789/1100" class=" Habilidades">
+                  <a href="<%= request.getContextPath() %>/handle/avante/1100" class=" Habilidades">
                     <i class="icon-Habilidades"></i>
                     Habilidades para a vida<br>
                     <div class="caret"></div>
@@ -253,6 +253,6 @@ if (communities != null && communities.length != 0)
 <div class="row">
 	<%@ include file="discovery/static-tagcloud-facet.jsp" %>
 </div>
-	
+
 </div>
 </dspace:layout>
