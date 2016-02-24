@@ -13,6 +13,7 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.dspace.core.ConfigurationManager;
+import org.dspace.eperson.EPerson;
 import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,6 +28,7 @@ public class OauthEduLivreServiceImpl implements OauthEduLivreService {
     private static final String oauthAddress;
     private static final String clientId;
     private static final String clientSecret;
+    private static final String profileServerAddress;
 
     private static final Logger log = LoggerFactory.getLogger(OauthEduLivreServiceImpl.class);
 
@@ -43,6 +45,8 @@ public class OauthEduLivreServiceImpl implements OauthEduLivreService {
         clientSecret = ConfigurationManager
                 .getProperty("authentication-oauth", "application.client.secret");
 
+        profileServerAddress = ConfigurationManager
+                .getProperty("authentication-oauth", "api.profile.address");
     }
 
     @Override
@@ -131,5 +135,39 @@ public class OauthEduLivreServiceImpl implements OauthEduLivreService {
         String accessToken = myObj.getString("access_token");
         token.setAccessToken(accessToken);
         log.debug("Token was updated!");
+    }
+
+    @Override
+    public void updateProfile(Token token, EPerson eperson) throws UnirestException, TokenInvalidExeption {
+         HttpResponse<JsonNode> response = Unirest.get(profileServerAddress+"?email="+token.getEmail())
+                .header("accept", "application/json")
+                .header("authorization", "Bearer " + token.getAccessToken())
+                .asJson();
+
+        if (response.getStatus() != 200) {
+            throw new TokenInvalidExeption("Error getting the profile: " + response.getBody());
+        }
+
+        JSONObject obj = response.getBody().getObject();
+        JSONObject person = (JSONObject) obj.getJSONObject("_embedded").getJSONArray("boe_candidato").get(0);
+        String name = person.getString("nome");
+        String firstName = null;
+        String lastName = null;
+        if (name != null) {
+            name = name.trim();
+            if (name.contains(" ")) {
+                firstName = name.substring(0, name.indexOf(" "));
+                lastName = name.substring(name.lastIndexOf(" ")+1);
+            } else {
+                firstName = name;
+            }
+        }
+        eperson.setFirstName(firstName);
+        eperson.setLastName(lastName);
+
+        if(!token.getEmail().equalsIgnoreCase(person.getString("email"))){
+            throw new TokenInvalidExeption("The email address described in the token isn't the same provided by "
+                    + "API REST Educação livre: "+profileServerAddress);
+        }
     }
 }

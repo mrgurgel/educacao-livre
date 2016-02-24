@@ -77,6 +77,12 @@ public class OauthAuthentication implements AuthenticationMethod {
     private static final Logger log = Logger.getLogger(OauthAuthentication.class);
 
     private final OauthEduLivreService oauthService = new OauthEduLivreServiceImpl();
+    private static final String language;
+
+    static {
+        language = ConfigurationManager
+                .getProperty("authentication-oauth", "login.defaultlanguage");
+    }
 
     /**
      * Predicate, can new user automatically create EPerson. Checks configuration value. You'll probably want this to be
@@ -218,7 +224,11 @@ public class OauthAuthentication implements AuthenticationMethod {
                     eperson = EPerson.create(context);
                     eperson.setEmail(email);
                     eperson.setCanLogIn(true);
+                    eperson.setLanguage(language);
                     AuthenticationManager.initEPerson(context, request, eperson);
+                    //gets the profile datas from the Educação Livre API.
+                    oauthService.updateProfile(token, eperson);
+
                     eperson.update();
                     context.commit();
                     context.restoreAuthSystemState();
@@ -238,6 +248,9 @@ public class OauthAuthentication implements AuthenticationMethod {
                 return BAD_ARGS;
             } else {
                 log.info(LogManager.getHeader(context, "login", "type=oauth"));
+                oauthService.updateProfile(token, eperson);
+                eperson.update();
+                context.commit();
                 context.setCurrentUser(eperson);
                 return SUCCESS;
             }
@@ -271,8 +284,8 @@ public class OauthAuthentication implements AuthenticationMethod {
             HttpServletResponse response) {
         log.debug("\n loginPageURL oauth");
         log.debug("\nVariáveis do arquivo de configuração: ");
-        log.debug("    groupName:"+ConfigurationManager.getProperty("authentication-oauth", "login.specialgroup"));
-        log.debug("    autoregister:"+ConfigurationManager.getBooleanProperty("authentication-oauth", "autoregister"));
+        log.debug("    groupName:" + ConfigurationManager.getProperty("authentication-oauth", "login.specialgroup"));
+        log.debug("    autoregister:" + ConfigurationManager.getBooleanProperty("authentication-oauth", "autoregister"));
         return response.encodeRedirectURL(request.getContextPath() + "/oauth-login");
     }
 

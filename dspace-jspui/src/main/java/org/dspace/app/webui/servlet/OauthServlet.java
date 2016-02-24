@@ -71,7 +71,7 @@ public class OauthServlet extends DSpaceServlet {
         try {
             token = oauthService.getToken(request);
         } catch (TokenInvalidExeption i) {
-            log.error("The token is corrupted. Redirecting to API page...");
+            log.error("The token is corrupted. Redirecting to API page...",i);
             response.sendRedirect(apiLoginPage);
         }
         if (token == null) {
