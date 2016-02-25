@@ -43,7 +43,7 @@
                <label>Título</label>
                <input-type>onebox</input-type>
                <hint>Título do recurso educacional.</hint>
-               <required>A inserção do título é obrigatória</required>
+               <required></required>
             </field>
 
             <field>
@@ -54,7 +54,7 @@
                <label>Autor</label>
                <input-type>onebox</input-type>
                <hint>Identificação do autor do recurso educacional.</hint>
-               <required>A inserção do autor é obrigatória</required>
+               <required></required>
             </field>
 
             <field>
@@ -65,7 +65,7 @@
                <label>Tipo de recurso educacional</label>
                <input-type value-pairs-name="educational_objet_type">dropdown</input-type>
                <hint>Tipo de recurso de educacional quanto a forma de apresentação.</hint>
-               <required>A inserção do tipo de recurso é obrigatória</required>
+               <required></required>
             </field>
 
             <field>
@@ -76,7 +76,7 @@
                <label>Data de criação</label>
                <input-type>date</input-type>
                <hint>Data de criação do recurso educacional.</hint>
-               <required>A inserção da data de criação é obrigatória</required>
+               <required></required>
             </field>
          </page>
          <page number="2">
@@ -134,7 +134,7 @@
                <label>Descrição</label>
                <input-type>textarea</input-type>
                <hint>Descrição do recurso educacional.</hint>
-               <required>Por favor, esse é um campo obriogatório, entre com a descrição do recurso educacional</required>
+               <required></required>
             </field>
 
             <field>
@@ -145,7 +145,7 @@
                <label>Detentor dos direitos autorais</label>
                <input-type>onebox</input-type>
                <hint>Detentor(es) do direito autoral do recurso educacional.</hint>
-               <required>A inserção do detentor(es) do direito autoral é obrigatória</required>
+               <required></required>
             </field>
 
             <!--
