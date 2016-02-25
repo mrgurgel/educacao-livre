@@ -47,8 +47,17 @@ input[type="text"] {
 	text-transform: uppercase;
 }
 
-.navbar-inverse .navbar-nav .glyphicon {
+.navbar-inverse .navbar-nav .glyphicon,
+.navbar-inverse .navbar-nav i {
     font-size: 24px;
+}
+
+.navbar-inverse .navbar-nav i.fa-bars {
+    font-size: 28px;
+}
+
+_::-webkit-full-page-media, _:future, :root .navbar-inverse .navbar-nav i.fa-bars {
+	font-size: 31px;
 }
 
 .navbar-inverse .navbar-nav > .open > a,
@@ -608,10 +617,9 @@ body.Português main .container div.well:hover {
 	transition: all 0.3s ease-in-out 0s;
 }
 
-
+body.Comunidades.e main .container div.well,
 body.Recursos.Educacionais main .container div.well,
-body.Communities.and.Collections main .container div.well,
-body.Comunidades.e.Coleções main .container div.well{
+body.Communities.and main .container div.well{
 	background: #FFB200;
 	color: #FFF;
 	border-radius: 0px;
@@ -733,4 +741,43 @@ body div.panel-statistics div.panel-heading{
 
 .panel-statistics h2 {
 	color: #006696;
+}
+
+/*** Submission ****/
+
+body.submission ol.breadcrumb {
+	margin-top: 15px;
+}
+
+main div.container ol.breadcrumb {
+    background-color: #ffffff;
+}
+
+body.submission main.submission_main_content div.container {
+	background: #F7F7F7;
+	padding-top: 15px;
+	padding-bottom: 30px;
+}
+
+body.submission main.submission_main_content div.container form div.btn-group {
+	width: 98%;
+}
+
+.btn-group input.btn-default:hover {
+	background: #78A6CE !important;
+	color: #FFF;
+	border:2px solid #006696;
+}
+.btn-group .btn-primary[disabled]:focus,
+.btn-group .btn-primary[disabled]:hover {
+	color: #FFF;
+}
+
+form p input.form-control,
+input.form-control[type="file"] {padding: 0px;}
+
+body.submission form div.col-md-offset-5 {margin-left: 0}
+
+main div.container div.row div.col-md-3 div.panel-warning div.panel-body form .btn {
+	font-size: 11px;
 }

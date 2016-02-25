@@ -51,9 +51,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="<%= request.getContextPath() %>/favicon.ico" type="image/x-icon"/>
 	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/jquery-ui-1.10.3.custom/redmond/jquery-ui-1.10.3.custom.css" type="text/css" />
-	    <!-- <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap.min.css" type="text/css" />
+	    <%-- <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap.min.css" type="text/css" />
 	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap-theme.min.css" type="text/css" />
-	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/dspace-theme.css" type="text/css" /> -->
+	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/dspace-theme.css" type="text/css" /> --%>
 
         <link rel="stylesheet" href="<%= request.getContextPath() %>/theme/thrive/static/css/font-awesome.css" type="text/css" />
         <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800">
@@ -161,10 +161,10 @@
             Alcance o conhecimento necessário para aproveitar as oportunidades.
         </p>
         <form method="get" action="<%= request.getContextPath() %>/simple-search" class="home-search simple-search col-lg-push-3 col-lg-6 col-md-12">
-            <div class="form-group col-md-10 col-lg-11">
+            <div class="form-group col-xs-12 col-sm-11 col-md-7 col-md-offset-2 col-lg-11 col-lg-offset-0">
                 <input type="text" class="form-control" placeholder="<fmt:message key="jsp.layout.navbar-default.search"/>" name="query2" id="tequery2" size="25"/>
             </div>
-            <button type="submit" class="btn btn-default">
+            <button type="submit" class="btn btn-default col-xs-12 col-sm-1 col-md-1 col-lg-1">
                 <span class="glyphicon glyphicon-search"></span>
             </button>
         </form>

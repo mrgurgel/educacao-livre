@@ -79,14 +79,14 @@ BrowseIndex bix = binfo.getBrowseIndex();
 
     <div class="navbar-header">
      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-       <span class="glyphicon glyphicon-menu-hamburger"></span>
+       <i class="fa fa-bars"></i>
      </button>
      <a class="navbar-brand" href="http://www.educacaolivre.org.br/portal/"><img src="<%= request.getContextPath() %>/theme/thrive/image/logo.svg" alt="Educação Livre Logo" /></a>
    </div>
    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
      <ul class="nav navbar-nav">
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle text-center" data-toggle="dropdown"><span class="glyphicon glyphicon-menu-hamburger"></span> <br>MENU <!--fmt:message key="jsp.layout.navbar-default.home"/--></a>
+        <a href="#" class="dropdown-toggle text-center" data-toggle="dropdown"><i class="fa fa-bars"></i> <br>MENU <!--fmt:message key="jsp.layout.navbar-default.home"/--></a>
         <ul class="dropdown-menu">
          <li><a href="<%= request.getContextPath() %>/community-list"><fmt:message key="jsp.layout.navbar-default.communities-collections"/></a></li>
          <li class="divider"></li>
@@ -160,7 +160,7 @@ BrowseIndex bix = binfo.getBrowseIndex();
               <%
               } else {
                 %>
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <%--fmt:message key="jsp.layout.navbar-default.sign"/--%> <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle text-center" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <%--fmt:message key="jsp.layout.navbar-default.sign"/--%> <%--b class="caret"></b--%></a>
                 <% } %>             
                 <ul class="dropdown-menu">
                  <li><a href="<%= request.getContextPath() %>/mydspace"><fmt:message key="jsp.layout.navbar-default.users"/></a></li>

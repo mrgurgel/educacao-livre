@@ -51,9 +51,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="<%= request.getContextPath() %>/favicon.ico" type="image/x-icon"/>
 	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/jquery-ui-1.10.3.custom/redmond/jquery-ui-1.10.3.custom.css" type="text/css" />
-	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap.min.css" type="text/css" />
+        <%-- 	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap.min.css" type="text/css" />
 	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap-theme.min.css" type="text/css" />
-	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/dspace-theme.css" type="text/css" />
+	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/dspace-theme.css" type="text/css" /> --%>
+                <link rel="stylesheet" href="<%= request.getContextPath() %>/theme/thrive/static/css/font-awesome.css" type="text/css" />
+        <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800">
+        <link rel="stylesheet" href="<%= request.getContextPath() %>/theme/thrive/static/css/bootstrap-educacaolivre.css" type="text/css" />
+        <link rel="stylesheet" href="<%= request.getContextPath() %>/theme/thrive/static/css/thrive.css" type="text/css" />
 <%
     if (!"NONE".equals(feedRef))
     {
@@ -121,7 +125,7 @@
 
     <%-- HACK: leftmargin, topmargin: for non-CSS compliant Microsoft IE browser --%>
     <%-- HACK: marginwidth, marginheight: for non-CSS compliant Netscape browser --%>
-    <body class="undernavigation">
+    <body class="undernavigation submission">
 <a class="sr-only" href="#content">Skip navigation</a>
 <header class="navbar navbar-inverse navbar-fixed-top">    
     <%
@@ -144,7 +148,7 @@
 %>
 </header>
 
-<main id="content" role="main">
+<main id="content" role="main" class="submission_main_content">
                 <%-- Location bar --%>
 <%
     if (locbar)
