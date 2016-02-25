@@ -248,10 +248,12 @@ public class OauthAuthentication implements AuthenticationMethod {
                 return BAD_ARGS;
             } else {
                 log.info(LogManager.getHeader(context, "login", "type=oauth"));
+                context.setCurrentUser(eperson);
+
                 oauthService.updateProfile(token, eperson);
                 eperson.update();
                 context.commit();
-                context.setCurrentUser(eperson);
+                
                 return SUCCESS;
             }
 

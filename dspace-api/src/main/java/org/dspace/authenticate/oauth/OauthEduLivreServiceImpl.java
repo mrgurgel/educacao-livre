@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.dspace.core.ConfigurationManager;
 import org.dspace.eperson.EPerson;
+import org.json.JSONException;
 import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -139,7 +140,7 @@ public class OauthEduLivreServiceImpl implements OauthEduLivreService {
 
     @Override
     public void updateProfile(Token token, EPerson eperson) throws UnirestException, TokenInvalidExeption {
-         HttpResponse<JsonNode> response = Unirest.get(profileServerAddress+"?email="+token.getEmail())
+        HttpResponse<JsonNode> response = Unirest.get(profileServerAddress + "?email=" + token.getEmail())
                 .header("accept", "application/json")
                 .header("authorization", "Bearer " + token.getAccessToken())
                 .asJson();
@@ -148,26 +149,27 @@ public class OauthEduLivreServiceImpl implements OauthEduLivreService {
             throw new TokenInvalidExeption("Error getting the profile: " + response.getBody());
         }
 
-        JSONObject obj = response.getBody().getObject();
-        JSONObject person = (JSONObject) obj.getJSONObject("_embedded").getJSONArray("boe_candidato").get(0);
-        String name = person.getString("nome");
-        String firstName = null;
-        String lastName = null;
-        if (name != null) {
-            name = name.trim();
-            if (name.contains(" ")) {
-                firstName = name.substring(0, name.indexOf(" "));
-                lastName = name.substring(name.lastIndexOf(" ")+1);
-            } else {
-                firstName = name;
+        try {
+            JSONObject obj = response.getBody().getObject();
+            JSONObject person = (JSONObject) obj.getJSONObject("_embedded").getJSONArray("boe_candidato").get(0);
+            String name = person.getString("nome");
+            String firstName = null;
+            String lastName = null;
+            if (name != null) {
+                name = name.trim();
+                if (name.contains(" ")) {
+                    firstName = name.substring(0, name.indexOf(" "));
+                    lastName = name.substring(name.lastIndexOf(" ") + 1);
+                } else {
+                    firstName = name;
+                }
             }
-        }
-        eperson.setFirstName(firstName);
-        eperson.setLastName(lastName);
+            eperson.setFirstName(firstName);
+            eperson.setLastName(lastName);
 
-        if(!token.getEmail().equalsIgnoreCase(person.getString("email"))){
-            throw new TokenInvalidExeption("The email address described in the token isn't the same provided by "
-                    + "API REST Educação livre: "+profileServerAddress);
+        } catch (JSONException e) {
+            log.error("Error reading the json with profile data.", e);
+            throw new TokenInvalidExeption("Have any problem with the harvest of profile information!");
         }
     }
 }
