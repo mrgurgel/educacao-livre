@@ -153,7 +153,7 @@
 <main id="content" role="main">
 <div class="container banner">
 	<div class="row">
-        <a class="link_home" href="<%= request.getContextPath() %>">
+        <a class="link_home" href="<%= request.getContextPath() %>/">
             <span class="icon-header-section"><img alt="" src="<%= request.getContextPath() %>/theme/thrive/image/blue-conteudo.svg"></span>
             <h1 class="title-header">Banco de Conteúdos</h1>
         </a>
