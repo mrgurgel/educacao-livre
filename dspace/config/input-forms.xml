@@ -233,51 +233,51 @@
       <value-pairs value-pairs-name="educational_profile_type" dc-term="classification_perfil">
          <pair>
             <displayed-value>P1 DL -  Domínio de diferentes linguagens verbais e não verbais (língua portuguesa, matemática, corporal, artística, tecnológica e científica), em contextos pessoais, sociais e laborais.  (COMPARTILHE)</displayed-value>
-            <stored-value>p1</stored-value>
-		</pair>
-		<pair>
+            <stored-value>P1 DL -  Domínio de diferentes linguagens verbais e não verbais (língua portuguesa, matemática, corporal, artística, tecnológica e científica), em contextos pessoais, sociais e laborais.  (COMPARTILHE)</stored-value>
+         </pair>
+         <pair>
             <displayed-value>P2 DLP - Domínio de conhecimentos básicos da língua portuguesa e compreensão de seu uso em contextos pessoais, sociais e laborais. (COMPARTILHE)</displayed-value>
-            <stored-value>p2</stored-value>
-		</pair>
-		<pair>
+            <stored-value>P2 DLP - Domínio de conhecimentos básicos da língua portuguesa e compreensão de seu uso em contextos pessoais, sociais e laborais. (COMPARTILHE)</stored-value>
+         </pair>
+         <pair>
             <displayed-value>P3 DMAT - Domínio de conhecimentos matemáticos básicos e compreensão de seu uso em contextos pessoais, sociais e laborais. (COMPARTILHE)</displayed-value>
-            <stored-value>p3</stored-value>
-		</pair>
-		<pair>
+            <stored-value>P3 DMAT - Domínio de conhecimentos matemáticos básicos e compreensão de seu uso em contextos pessoais, sociais e laborais. (COMPARTILHE)</stored-value>
+         </pair>
+         <pair>
             <displayed-value>P4 LEM - Comunicação em um segundo idioma. (CONECTE)</displayed-value>
-            <stored-value>p4</stored-value>
-		</pair>
-		<pair>
+            <stored-value>P4 LEM - Comunicação em um segundo idioma. (CONECTE)</stored-value>
+         </pair>
+         <pair>
             <displayed-value>P5 CF - Apropriação de conceitos fundamentais de diversas áreas do conhecimento para compreender fenômenos e para aplicar criticamente no mundo do trabalho. (COMPARTILHE)</displayed-value>
-            <stored-value>p5</stored-value>
-		</pair>
-		<pair>
+            <stored-value>P5 CF - Apropriação de conceitos fundamentais de diversas áreas do conhecimento para compreender fenômenos e para aplicar criticamente no mundo do trabalho. (COMPARTILHE)</stored-value>
+         </pair>
+         <pair>
             <displayed-value>P6 CRIF - Expressão de criatividade e de flexibilidade nas ações. (INSPIRE)</displayed-value>
-            <stored-value>p6</stored-value>
-		</pair>
-		<pair>
+            <stored-value>P6 CRIF - Expressão de criatividade e de flexibilidade nas ações. (INSPIRE)</stored-value>
+         </pair>
+         <pair>
             <displayed-value>P7 ETIC - Postura ética, reflexiva e crítica nas ações e relações sociais e profissionais. (INSPIRE)</displayed-value>
-            <stored-value>p7</stored-value>
-		</pair>
-		<pair>
+            <stored-value>P7 ETIC - Postura ética, reflexiva e crítica nas ações e relações sociais e profissionais. (INSPIRE)</stored-value>
+         </pair>
+         <pair>
             <displayed-value>P8 PROA - Atuação proativa, autônoma e responsável em situações cotidianas, inusitadas e emergenciais. (INSPIRE)</displayed-value>
-            <stored-value>p8</stored-value>
-		</pair>
-		<pair>
+            <stored-value>P8 PROA - Atuação proativa, autônoma e responsável em situações cotidianas, inusitadas e emergenciais. (INSPIRE)</stored-value>
+         </pair>
+         <pair>
             <displayed-value>P9 APP - Compromisso permanente com o aprimoramento profissional e pessoal compreendendo os contextos de acelerada mudança tecnológica, social e cultural.  (CONECTE)</displayed-value>
-            <stored-value>p9</stored-value>
-		</pair>
-		<pair>
+            <stored-value>P9 APP - Compromisso permanente com o aprimoramento profissional e pessoal compreendendo os contextos de acelerada mudança tecnológica, social e cultural.  (CONECTE)</stored-value>
+         </pair>
+         <pair>
             <displayed-value>P10   ATEQ - Atuação em equipes, grupos e redes, com respeito, cooperação, solidariedade, iniciativa e responsabilidade. (CONECTE)</displayed-value>
-            <stored-value>p10</stored-value>
-		</pair>
-		<pair>
+            <stored-value>P10   ATEQ - Atuação em equipes, grupos e redes, com respeito, cooperação, solidariedade, iniciativa e responsabilidade. (CONECTE)</stored-value>
+         </pair>
+         <pair>
             <displayed-value>P11   DIV - Valorização e respeito à diversidade, à multiculturalidade e ao ambiente. (INSPIRE)</displayed-value>
-            <stored-value>p11</stored-value>
-		</pair>
-		<pair>
+            <stored-value>P11   DIV - Valorização e respeito à diversidade, à multiculturalidade e ao ambiente. (INSPIRE)</stored-value>
+         </pair>
+         <pair>
             <displayed-value>P12   PAT - Consciência da importância da preservação do ambiente de trabalho e do patrimônio material e imaterial. (INSPIRE)</displayed-value>
-            <stored-value>p12</stored-value>
+            <stored-value>P12   PAT - Consciência da importância da preservação do ambiente de trabalho e do patrimônio material e imaterial. (INSPIRE)</stored-value>
          </pair>
       </value-pairs>
    </form-value-pairs>
