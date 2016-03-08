@@ -16,8 +16,25 @@
 <link rel="stylesheet" href="../theme/thrive/static/css/bootstrap-educacaolivre.css" type="text/css"/>
 </head>
 <body class="help">
+<div class="header">    
+  <div class="navbar-header text-center">
+     <a class="navbar-brand text-center" href="http://www.educacaolivre.org.br/portal/"><img height="35" src="../theme/thrive/image/logo.svg" alt="Educação Livre Logo" /></a>
+   </div>
+</div>
 
-<h2>DSPACE HELP<br /></h2>
+
+<div class="container banner">
+  <div class="row">
+        <a href="/bancoconteudos/" class="link_home">
+            <span class="icon-header-section"><img src="/bancoconteudos/theme/thrive/image/blue-conteudo.svg" alt=""></span>
+            <h1 class="title-header">Banco de Conteúdos</h1>
+        </a>
+        <p class="description-header">
+            Tire todas as suas dúvidas de como alcançar o conhecimento:
+        </p>
+  </div>
+</div>
+
 <table>
   <tr> 
     <td><h3><a name="contents">Help Contents:</a></h3></td>
@@ -26,7 +43,7 @@
   </td>
   </tr>
   </table>
-  <div aria-label="Vertical button group" role="group" class="btn-group-vertical">  
+  <div aria-label="Vertical button group" role="group" class="btn-group-vertical text-center col-md-8 col-md-offset-2">  
   <button class="btn btn-default" type="button" href="#browse">Browse</button>
   <button class="btn btn-default" type="button" href="#search">Search</button>
   <button class="btn btn-default" type="button" href="#advanced">Advanced Search</button>
@@ -36,11 +53,11 @@
   <button class="btn btn-default" type="button" href="#login">Sign on to DSpace</button>
   <button class="btn btn-default" type="button" href="#submit">Submit</button>
   <button class="btn btn-default" type="button" href="#formats">File Formats </button>
-  <button class="btn btn-default" type="button" href="#handles">Handles</button>
+  <button class="btn btn-default" type="button" href="#handles">Handles</button>  
   <button class="btn btn-default" type="button" href="#mydspace">My DSpace</button>
   <button class="btn btn-default" type="button" href="#subscribe">Edit Profile</button>
   <button class="btn btn-default" type="button" href="#subscribe">Subscribe to E-mail alerts</button>
-</div>
+  </div>
   <h5>&nbsp;</h5>
  <p>DSpace captures, distributes and preserves digital research products. 
     Here you can find articles, working papers, preprints, technical reports, conference papers 
@@ -97,12 +114,12 @@ order and allows you to see the subcommunities and collections within each commu
 <p>To search all of DSpace, 
   use the yellow search box at the top of the navigation bar on the left (or the 
   search box in the middle of the home page)</p>
-<p align="center"> <img src="searchtop.gif" alt="Search Box" width="119" height="53" /> 
+<p align="center"> <img src="searchtop.gif" alt="Search Box" class="img-responsive"/> 
   </p>
 <p> To limit your search to 
   a specific community or collection, navigate to that community or collection 
   and use the search bar on that page.</p>
-<p align="center"> <img src="searchother.gif" alt="Search Box" width="253" height="69" /></p>
+<p align="center"> <img src="searchother.gif" alt="Search Box" class="img-responsive" /></p>
 <p>DSpace uses the<strong> Jakarta 
   Lucene </strong>search engine. Here are some search hints:</p>
 <blockquote> 
@@ -129,7 +146,7 @@ order and allows you to see the subcommunities and collections within each commu
     </strong>Use an asterisk (*) after a word stem to get all hits having words starting 
     with that root, for example: </p>
   <blockquote> 
-    <p><img src="search1.gif" alt="" width="75" height="27" />&nbsp;&nbsp; 
+    <p><img src="search1.gif" alt=""  class="img-responsive" />&nbsp;&nbsp; 
       will retrieve selects, selector, selectman, selecting. </p>
   </blockquote>
   <p><strong>Stemming <br />
@@ -138,14 +155,14 @@ order and allows you to see the subcommunities and collections within each commu
   <p><strong>Phrase Searching</strong><br />
     To search using multiple words as a phrase, put quotation marks (&quot;) around 
     the phrase.</p>
-  <p><img src="search8.jpg" alt=""  width="196" height="28" /> 
+  <p><img src="search8.jpg" alt=""   class="img-responsive" /> 
     </p>
   <p><strong>Exact word match</strong><br />
     Put a plus (+) sign before a word if it MUST appear in the search result. 
     For instance, in the following search the word &quot;training&quot; is optional, 
     but the word &quot;dog&quot; must be in the result. </p>
   <blockquote> 
-    <p><img src="search2.gif" alt=""  width="123" height="27" /></p>
+    <p><img src="search2.gif" alt=""   class="img-responsive" /></p>
   </blockquote>
   <p><strong>Eliminate items with 
     unwanted words<br />
@@ -153,8 +170,8 @@ order and allows you to see the subcommunities and collections within each commu
     results. Alternatively, you can use <strong>NOT</strong>. This can limit your search 
     to eliminate unwanted hits. For instance, in the search</p>
   <blockquote> 
-    <p><img src="search3.jpg" alt="" width="124" height="28" /> 
-      &nbsp; or &nbsp; <img src="search4.jpg" alt="" width="136" height="28" /></p>
+    <p><img src="search3.jpg" alt=""  class="img-responsive" /> 
+      &nbsp; or &nbsp; <img src="search4.jpg" alt=""  class="img-responsive" /></p>
   </blockquote>
   <p>you will get items containing 
     the word &quot;training&quot;, except those that also contain the word &quot;cat&quot;.</p>
@@ -166,7 +183,7 @@ order and allows you to see the subcommunities and collections within each commu
     searches to find items containing all words or phrases combined with this 
     operator, e.g.</p>
   <blockquote> 
-    <p> <img src="search5.jpg" alt="" width="124" height="28" /> 
+    <p> <img src="search5.jpg" alt=""  class="img-responsive" /> 
       will retrieve all items that contain BOTH the words &quot;cats&quot; and 
       &quot;dogs&quot;.</p>
   </blockquote>
@@ -174,21 +191,21 @@ order and allows you to see the subcommunities and collections within each commu
     searches to find items containing any of the words or phrases surrounding 
     this operator </p>
   <blockquote> 
-    <p><img src="search6.jpg" alt="" width="124" height="28" /> 
+    <p><img src="search6.jpg" alt=""  class="img-responsive" /> 
       will retrieve all items that contain EITHER the words &quot;cats&quot; or 
       &quot;dogs&quot;.</p>
   </blockquote>
   <p><strong>NOT - </strong>to exclude 
     items containing the word following this operator, e.g. </p>
   <blockquote> 
-    <p><img src="search4.jpg" alt="" width="136" height="28" />will 
+    <p><img src="search4.jpg" alt=""  class="img-responsive" />will 
       retrieve all items that contain the word &quot;training&quot; EXCEPT those 
       also containing the word &quot;cat&quot;.</p>
   </blockquote>
   <p>Parentheses can be used 
     in the search query to group search terms into sets, and operators can then 
     be applied to the whole set, e.g.</p>
-  <p><img src="search7.jpg" alt="" width="340" height="28" /> 
+  <p><img src="search7.jpg" alt=""  class="img-responsive" /> 
     </p>
   <hr />
 </blockquote>
@@ -335,7 +352,7 @@ for your selected category.</p>
   you have started you can also use these buttons to move back and forth within 
   the submission process by clicking on them. You will not lose data by moving 
   back and forth. </p>
-<p><img src="progressbar.gif" alt="Progress Bar" width="698" height="39" /></p>
+<p><img src="progressbar.gif" alt="Progress Bar"  class="img-responsive" /></p>
 <p>Select Collection:</p>
 <p><strong>Click on the arrow at 
   the right of the drop-down box to see a list of Collections. Move your mouse 
@@ -404,16 +421,16 @@ for your selected category.</p>
     organization or service responsible for creating or contributing to the content 
     of the item. By clicking on the &quot;Add More&quot; button you can add as 
     many authors as needed.&nbsp;&nbsp; Examples: </p>
-  <p align="center"><img src="author.gif" alt="Author submit" width="584" height="71" /></p>
+  <p align="center"><img src="author.gif" alt="Author submit"  class="img-responsive" /></p>
   <p align="center">If the 
     author is an organization, use the last name input box for the organization 
     name:</p>
-  <p align="center"><img src="corpauthor.gif" alt="author submit" width="575" height="66" /></p>
+  <p align="center"><img src="corpauthor.gif" alt="author submit"  class="img-responsive" /></p>
   <hr />
   <p><strong>Title:</strong> </p>
   <p>Enter the full and proper 
     name by which this item should be known. All DSpace items must have a title!</p>
-  <p align="center"> <img src="finalTitle1.jpg" alt="title submit" width="392" height="62" /></p>
+  <p align="center"> <img src="finalTitle1.jpg" alt="title submit"  class="img-responsive" /></p>
   <hr />
   <strong>Other Title:</strong> (note 
   - this input box appears only if you indicated on the first page that the item 
@@ -421,7 +438,7 @@ for your selected category.</p>
   <p>If your item has a valid 
     alternative title, for instance, a title in another language or an abbreviation, 
     then enter it here. Example:</p>
-  <p align="center"><img src="othertitle.gif" alt="Other title" width="612" height="62" /></p>
+  <p align="center"><img src="othertitle.gif" alt="Other title"  class="img-responsive" /></p>
   <hr />
   <p><strong>Date of Issue:</strong> 
     (note - this input box appears only if you indicated on the first page that 
@@ -433,7 +450,7 @@ for your selected category.</p>
     know the month, leave the default &quot;no month&quot;; otherwise select a 
     month from the drop-down box. If you don't know the exact day, leave that 
     box empty.</p>
-  <p align="center"><img src="date.gif" alt="date of issue" width="471" height="53" /></p>
+  <p align="center"><img src="date.gif" alt="date of issue"  class="img-responsive" /></p>
   <hr />
   <p>&nbsp;</p>
   <p><strong>Publisher: </strong>(note 
@@ -459,7 +476,7 @@ for your selected category.</p>
     value in the <strong>Series</strong><i> </i> <strong>Name</strong> box which you should not change, 
     but you will have to fill in the assigned number in the <strong>Report or Paper 
     No.</strong> input box. &nbsp;Examples: </p>
-  <p align="center"><img src="Series.gif" alt="Series" width="633" height="67" /></p>
+  <p align="center"><img src="Series.gif" alt="Series"  class="img-responsive" /></p>
   <hr />
   <p><strong>Identifiers: </strong></p>
   <p>If you know of a unique 
@@ -488,7 +505,7 @@ for your selected category.</p>
     - United States) is not appropriate, click on the arrow on the right of the 
     drop down box to see a list of languages commonly used for publications, 
     e.g.</p>
-  <p align="center"><img src="finalLanguage1.jpg" alt="language" width="284" height="40" /></p>
+  <p align="center"><img src="finalLanguage1.jpg" alt="language"  class="img-responsive" /></p>
   <p>If your item is not a 
     text document and language is not applicable as description, then select the 
     N/A choice.</p>
@@ -512,7 +529,7 @@ for your selected category.</p>
   item in their searches. Use one input box for each subject word or phrase. You 
   can get more input boxes by clicking on the &quot;add more&quot; button. Examples: 
   </p>
-<p align="center"><img src="keywords.gif" alt="keywords" width="533" height="100" /></p>
+<p align="center"><img src="keywords.gif" alt="keywords"  class="img-responsive" /></p>
 <p>Your community may suggest 
   the use of a specific vocabulary, taxonomy, or thesaurus. If this is the case, 
   please select your subject words from that list. Future versions of DSpace will 
@@ -527,7 +544,7 @@ for your selected category.</p>
 <p>If your item is the product 
   of sponsored research, you can provide information about the sponsor(s) here. 
   This is a freeform field where you can enter any note you like. Example:</p>
-<p align="center"><img src="sponsor.gif" alt="sponsor" width="542" height="110" /></p>
+<p align="center"><img src="sponsor.gif" alt="sponsor"  class="img-responsive" /></p>
 <p>&nbsp;</p>
 <hr />
 <p><strong>Description:</strong></p>
