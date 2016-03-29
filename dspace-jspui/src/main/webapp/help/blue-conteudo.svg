@@ -1,0 +1,304 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Banco de Conteúdos: Erro: Documento não encontrado</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="Generator" content="DSpace 5.4" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+	    <link rel="stylesheet" href="/static/css/jquery-ui-1.10.3.custom/redmond/jquery-ui-1.10.3.custom.css" type="text/css" />
+	    
+
+        <link rel="stylesheet" href="/theme/thrive/static/css/font-awesome.css" type="text/css" />
+        <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800">
+        <link rel="stylesheet" href="/theme/thrive/static/css/bootstrap-educacaolivre.css" type="text/css" />
+        <link rel="stylesheet" href="/theme/thrive/static/css/thrive.css" type="text/css" />
+
+
+        <link rel="search" type="application/opensearchdescription+xml" href="/open-search/description.xml" title="DSpace"/>
+
+        
+	<script type='text/javascript' src="/static/js/jquery/jquery-1.10.2.min.js"></script>
+	<script type='text/javascript' src='/static/js/jquery/jquery-ui-1.10.3.custom.min.js'></script>
+	<script type='text/javascript' src='/static/js/bootstrap/bootstrap.min.js'></script>
+	<script type='text/javascript' src='/static/js/holder.js'></script>
+	<script type="text/javascript" src="/utils.js"></script>
+    <script type="text/javascript" src="/static/js/choice-support.js"> </script>
+
+    
+    
+    
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="/static/js/html5shiv.js"></script>
+  <script src="/static/js/respond.min.js"></script>
+<![endif]-->
+    </head>
+
+    
+    
+    <body class="undernavigation Erro: Documento não encontrado">
+<a class="sr-only" href="#content">Skip navigation</a>
+<header class="navbar navbar-inverse navbar-fixed-top">    
+    
+            <div class="container">
+                
+
+
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+       <i class="fa fa-bars"></i>
+     </button>
+     <a class="navbar-brand" href="http://www.educacaolivre.org.br/portal/"><img src="/theme/thrive/image/logo.svg" alt="Educação Livre Logo" /></a>
+   </div>
+   <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+     <ul class="nav navbar-nav">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle text-center" data-toggle="dropdown"><i class="fa fa-bars"></i> <br>MENU <!--fmt:message key="jsp.layout.navbar-default.home"/--></a>
+        <ul class="dropdown-menu">
+         <li><a href="/community-list">Comunidades e coleções</a></li>
+         <li class="divider"></li>
+         <li class="dropdown-header">Navegar nos Itens por:</li>
+             
+
+             
+             <li><a href="/browse?type=dateissued">Data do documento</a></li>
+             
+             <li><a href="/browse?type=author">Todos os autores</a></li>
+             
+             <li><a href="/browse?type=title">Título</a></li>
+             
+             <li><a href="/browse?type=subject">Assunto</a></li>
+             
+
+           
+
+       <li class="divider"></li>
+       <li class=""><script type="text/javascript">
+<!-- Javascript starts here
+document.write('<a href="#" onClick="var popupwin = window.open(\'/help/index.html\',\'dspacepopup\',\'height=600,width=550,resizable,scrollbars\');popupwin.focus();return false;">Ajuda<\/a>');
+// -->
+</script><noscript><a href="/help/index.html" target="dspacepopup">Ajuda</a></noscript></li>
+     </ul>
+     </li>
+     <li class="dropdown">
+      <a data-toggle="dropdown" class="dropdown-toggle text-center" href="#"><span class="glyphicon glyphicon-search"></span> <br>PROCURAR </a>
+        <ul class="dropdown-menu">
+         <li>
+          
+              <form method="get" action="/simple-search" class="navbar-form navbar-right simple-search">
+               <div class="form-group col-md-9">
+                <input type="text" class="form-control" placeholder="Buscar no repositório" name="query" id="tequery" size="25"/>
+              </div>
+              <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+
+          </form>
+         </li>
+        </ul>
+     </li>
+    </ul>
+
+
+     
+         <div class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-right">
+          </ul>
+        </div>
+        
+
+      <div class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right">
+         <li class="dropdown">
+           
+                <a href="#" class="dropdown-toggle text-center" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>  </a>
+                             
+                <ul class="dropdown-menu">
+                 <li><a href="/mydspace">Meu espaço</a></li>
+                 </li>
+
+                 
+                  </ul>
+                </li>
+              </ul>
+
+              </div>
+        </nav>
+
+            </div>
+
+</header>
+
+<main id="content" role="main">
+<div class="container banner">
+	<div class="row">
+        <a class="link_home" href="/">
+            <span class="icon-header-section"><img alt="" src="/theme/thrive/image/blue-conteudo.svg"></span>
+            <h1 class="title-header">Banco de Conteúdos</h1>
+        </a>
+        <p class="description-header">
+            Alcance o conhecimento necessário para aproveitar as oportunidades.
+        </p>
+        <form method="get" action="/simple-search" class="home-search simple-search col-lg-push-3 col-lg-6 col-md-12">
+            <div class="form-group col-xs-12 col-sm-11 col-md-7 col-md-offset-2 col-lg-11 col-lg-offset-0">
+                <input type="text" class="form-control" placeholder="Buscar no repositório" name="query2" id="tequery2" size="25"/>
+            </div>
+            <button type="submit" class="btn btn-default col-xs-12 col-sm-1 col-md-1 col-lg-1">
+                <span class="glyphicon glyphicon-search"></span>
+            </button>
+        </form>
+	</div>
+</div>	
+<br/>
+                
+
+<div class="container">
+                
+
+
+
+  
+
+<ol class="breadcrumb">
+
+  <li><a href="/">Banco de Conteúdos</a></li>
+
+</ol>
+
+</div>                
+
+
+
+        
+<div class="container">
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <h1>Erro: Documento não encontrado</h1>
+    
+    <p>O documento que você está tentando acessar não foi encontrado no servidor.</p>
+    <ul>
+        
+		<li><p>Se você chegou aqui seguindo uma ligação ou bookmark fornecida por alguém, a ligação pode estar incorreta ou digitado incorretamente o link. Verifique o link e tente novamente. Se você ainda receber esse erro, tente ir para o Meu espaço <a href=&quot;/&quot;>Página principal</a> e procure o registro.</p></li>
+        
+		<li><p>Se você chegou a este erro ao clicar em um link no repositório, nos avise para que possamos corrigí-lo</p></li>
+    </ul>
+
+    
+
+  
+  
+  
+
+
+
+<center>
+  <p><a href="/feedback">Deixe uma mensagem para os administradores do Banco de Conteúdos.</a></p>
+</center>
+
+
+    <p align="center">
+        
+        <a href="/">Ir para a página inicial do repositório</a>
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+</div>
+</main>
+
+
+<div ui-view="footer" class="ng-scope"><footer class="ng-scope">
+    <div class="container">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            <ul class="sponsors-list">
+                <li><img alt="" src="/theme/thrive/image/logo-footer.svg"></li>
+                <li><img alt="" src="/theme/thrive/image/logo-unesco.svg"></li>
+                <li><img alt="" src="/theme/thrive/image/logo-oviin.svg"></li>
+                <li><img alt="" src="/theme/thrive/image/logo-sesi.svg"></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="social-label">Nossos Canais</div>
+            <ul class="nav nav-pills social-list">
+                <li role="presentation" class="facebook"><a ng-click="open()" href="javascript:void(0);"><i class="fa fa-facebook fa-2"></i></a></li>
+                <li role="presentation" class="twitter"><a ng-click="open()" href="javascript:void(0);"><i class="fa fa-twitter fa-2"></i></a></li>
+                <li role="presentation" class="youtube"><a ng-click="open()" href="javascript:void(0);"><i class="fa fa-youtube fa-2"></i></a></li>
+                <li role="presentation" class="google-plus"><a ng-click="open()" href="javascript:void(0);"><i class="fa fa-google-plus fa-2"></i></a></li>
+                <li role="presentation" class="instagram"><a ng-click="open()" href="javascript:void(0);"><i class="fa fa-instagram fa-2"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</footer></div>
+
+    </body>
+</html>
